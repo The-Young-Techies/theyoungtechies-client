@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  @apply m-0;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  }
