@@ -1,18 +1,18 @@
 import { buttons } from "@/lib/header";
+import ServiceCarousel from "./Carousel";
 export default function Header() {
     return (
-        <header className="w-full h-[100vh]  flex justify-center items-center bg-fixed bg-[url('/images/headerback.jpg')] relative bg-no-repeat bg-center bg-cover">
-            <div className="w-full h-full absolute inset-0 z-0 bg-[#0000009e]"></div>
-            <div className=" mt-20  max-sm:mt-0 w-full flex gap-6 justify-center items-center flex-col z-1">
-                <img src={"/images/png logo.png"} width={100} className="max-sm:w-[70px] " height={100} alt={""}/>
-                <h2 className="text-[50px] w-[40%] max-md:w-[70%] max-lg:w-[80%] max-sm:w-[90%] max-sm:text-[27px] max-sm:leading-8 max-md:text-[35px] text-center leading-14 text-white">
-                    Premium Web Template for Digital Agencies
-                </h2>
-                <p className="text-xl max-md:w-[95%] max-sm:text-[17px] text-center w-[60%] text-white">Stand out with a sleek, responsive template built to impress. Perfect for creative agencies, portfolios, and startups.</p>
-                <div className="flex max-sm:gap-4 gap-9">
-                    {buttons.map((btn, idx) => (
-                        <button key={idx} className={btn.className}>{btn.text}</button>
-                    ))}
+        <header className="w-full h-[100vh]  flex justify-center items-center bg-[url('/images/home-header.jpg')] relative bg-no-repeat bg-left bg-cover">
+            <div className="w-full h-full absolute inset-0 z-0 bg-[#000000b9]"></div>
+            <div className="flex flex-col justify-center items-center gap-7 text-center z-10">
+                <h1 className="text-white text-[40px] font-bold w-2xl ">
+                    We Turn Ideas Into Digital Products That <span className="text-blue-500">Perform</span>
+                </h1>
+                <p className="text-gray-200 text-lg w-5xl">
+                    With our cutting-edge UI/UX, unique web apps, high-converting e-commerce sites, and astute SEO, we help brands stand out. We ensure that your online presence truly functions, from design to deployment and even social media.</p>
+                <div className="flex justify-start items-center gap-5">
+                    <button className="text-white text-lg border border-blue-500 bg-blue-500 py-2 px-4 rounded-xl capitalize">view our services</button>
+                    <button className="text-white text-lg border border-white py-2 px-6 rounded-xl capitalize">contact us</button>
                 </div>
             </div>
         </header>

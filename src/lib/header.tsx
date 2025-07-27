@@ -22,31 +22,36 @@ export const services: Service[] = [
     title: "Website Development",
     description: "Custom-built websites tailored to your business needs and goals.",
     bgColor: "#EDE8FF",
-    icon: "/icons/webdevlopment.svg",
+    icon: "/images/web-dev-service.jpg",
   },
   {
     title: "E-Commerce Solutions",
-    description: "Robust e-commerce platforms to boost your online sales.",
+    description: "We Help You To Robust e-commerce platforms to boost your online sales.",
     bgColor: "#FFE3E3",
-    icon: "/icons/ecommerce.svg",
+    icon: "/images/e-commerce-solutions.jpg",
   },
   {
     title: "Mobile Development",
     description: "Improve your visibility on search engines with expert SEO.",
     bgColor: "#E4F1FF",
-    icon: "/icons/mobileapp.svg",
+    icon: "/images/mobile-development.jpg",
   },
   {
     title: "UI/UX Design",
     description: "Create delightful user experiences with our UI/UX services.",
     bgColor: "#FFF0E1",
-    icon: "/icons/ui-ux.svg",
+    icon: "/images/ui-ux-design.jpg",
   },
   {
     title: "Custom Web Apps",
     description: "Advanced web applications designed to scale and perform.",
     bgColor: "#F1E4FF",
-    icon: "/icons/webapp.svg",
+    icon: "/images/customise-web-apps.jpg",
   },
-
+  {
+    title: "Social Media Marketing",
+    description: "Advanced web applications designed to scale and perform.",
+    bgColor: "#F1E4FF",
+    icon: "/images/social-media-marketing.jpg",
+  },
 ];

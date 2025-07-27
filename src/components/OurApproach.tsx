@@ -1,23 +1,27 @@
 import { steps } from "@/lib/ourApproach";
+
 export default function OurApproach() {
     return (
-        <section className="w-full h-full py-15 relative gap-5 max-sm:gap-10 flex bg-[url('/images/ouraproch.jpg')] bg-fixed bg-center bg-cover bg-no-repeat justify-center flex-col items-center">
-            <div className="w-full h-full absolute inset-0 z-0 bg-[#000000ad]"></div>
-            
-            <div className="flex relative flex-col max-sm:mb-5 justify-center items-center gap-3">
-                <h1 className="text-4xl text-white font-bold">Our Approach</h1>
-                <p className="text-[18px] text-[#ffffffd4] w-[70%] max-sm:w-[90%] text-center leading-7">
+        <section className="w-full py-20 bg-white flex flex-col items-center gap-14 px-4">
+            <div className="flex flex-col justify-center items-center gap-4">
+                <h1 className="text-4xl text-gray-900 font-bold text-center">
+                    Our Simple & Basic <span className="text-blue-600">Approach</span>
+                </h1>
+                <p className="text-lg text-gray-600 w-full max-w-3xl text-center leading-7">
                     We follow a collaborative, client-centered approach to ensure that every project meets and exceeds expectations.
                 </p>
             </div>
-            <div className="w-full relative flex justify-center  gap-15 max-sm:gap-10 items-center max-sm:h-full h-[400px] flex-wrap">
-                {steps.map(({ icon, title, description, bgColor }, index) => (
-                    <div key={index} className="flex flex-col  hover:scale-102 transition-all duration-400 gap-3 justify-center items-center w-[380px]">
-                        <span className="w-[70px] h-[70px] text-[30px] rounded-full flex justify-center items-center" style={{ backgroundColor: bgColor }}>
-                            {icon}
+
+            <div className="flex flex-wrap justify-center items-start gap-14 w-full max-w-7xl">
+                {steps.map(({ icon, title, description }, index) => (
+                    <div key={index} className="flex justify-start items-start rounded-lg border border-gray-200 p-6 hover:scale-105 transition-all shadow-md max-w-xs gap-4">
+                         <p className="text-blue-600 text-xl border-2 border-gray-300 rounded-full px-2 py-1 font-bold">
+                                {icon}
+                            </p>
+                        <span className="flex flex-col justify-start items-start gap-3">
+                            <h2 className="text-xl font-semibold underline text-blue-800">{title}</h2>
+                             <p className="text-md text-gray-600">{description}</p>
                         </span>
-                        <h2 className="text-[27px] text-white">{title}</h2>
-                        <p className="text-[18px] max-sm:w-[90%] text-[#e6e2e2] w-full text-center">{description}</p>
                     </div>
                 ))}
             </div>

@@ -5,6 +5,9 @@ import Header from '@/components/Header'
 import OurApproach from '@/components/OurApproach'
 import Project from '@/components/Project'
 import Services from '@/components/Services'
+import ServiceCarousel from '@/components/Carousel'
+import TeamMember from '@/components/Team'
+import FaqSection from '@/components/Faqs'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -15,12 +18,15 @@ function App() {
   return (
     <main>
       <Header />
+      <ServiceCarousel />
       <AboutUs />
       <OurApproach />
       <Project />
       <Services />
-      <ContactUs />
       <GetStarted />
+      <TeamMember />
+      <FaqSection />
+      <ContactUs />
     </main>
   )
 }

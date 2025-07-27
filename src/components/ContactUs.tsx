@@ -1,12 +1,13 @@
 import { contactMethods, formFields, reasons, selectOptions } from "@/lib/Contactus";
+import { CheckCircle2 } from "lucide-react";
 
 export default function ContactUs() {
     return (
         <section className="text-black w-full h-[645px] max-lg:py-5 flex z-20 bg-white justify-center max-lg:flex-col max-lg:h-full items-center gap-18 px-4">
             <div className="w-[40%] max-lg:w-full h-[90%] flex flex-col gap-4 justify-center">
-                <span className="text-black text-xl w-fit ">Contact Us</span>
-                <h3 className="text-3xl text-[#0B1026]">Get In Touch</h3>
-                <p className="text-xl text-[#6B6E7A]">Have a project in mind? Fill out the form and we'll get back to you soon.</p>
+                <span className="text-gray-500 font-bold text-sm w-fit uppercase ">Contact Us</span>
+                <h3 className="text-4xl font-bold text-[#0B1026]">Get In <span className="text-blue-600">Touch</span></h3>
+                <p className="text-lg text-[#6B6E7A]">Have a project in mind? Fill out the form and we'll get back to you soon.</p>
 
                 {contactMethods.map(({ icon, title, detail }, i) => (
                     <div key={i} className="flex gap-5 items-center h-[65px]">
@@ -21,8 +22,8 @@ export default function ContactUs() {
                 <div className="flex flex-col gap-2 mt-4">
                     <h4 className="text-xl font-semibold">Why choose us?</h4>
                     {reasons.map((reason, i) => (
-                        <div key={i} className="flex gap-2 items-start">
-                            <span>✔️</span> <p className="text-[#222222da]">{reason}</p>
+                        <div key={i} className="flex justify-start gap-2 items-center">
+                            <CheckCircle2 color="#3468E9" size={16}/> <p className="text-[#222222da]">{reason}</p>
                         </div>
                     ))}
                 </div>
