@@ -42,9 +42,9 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full bg-blue-50 px-20 py-24">
+    <section className="w-full bg-blue-50 px-5 md:px-20 py-24">
       <div className="max-w-full mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 capitalize">
+        <h2 className="text-h6 md:text-h5 lg:text-h4 font-bold text-center mb-4 capitalize">
           frequently <span className="text-blue-500">asked</span> questions
         </h2>
 
@@ -67,7 +67,7 @@ export default function FAQ() {
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center text-left p-6 md:p-8 cursor-pointer"
                 >
-                  <span className="text-h5 md:text-h5 xl:text-h4 font-semibold text-black">
+                  <span className="text-body xl:text-para font-semibold text-black">
                     {faq.question}
                   </span>
                   <FontAwesomeIcon

@@ -21,7 +21,7 @@ function App() {
       <ServiceCarousel />
       <AboutUs />
       <OurApproach />
-      <Project />
+      {/* <Project /> */}
       <Services />
       <GetStarted />
       <TeamMember />

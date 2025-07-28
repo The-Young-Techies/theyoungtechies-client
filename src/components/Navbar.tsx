@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="flex justify-start items-center gap-12">
                 <img src={"/images/logo1.jpeg"} width={70} className="max-sm:w-[70px]" height={100} alt={""} />
             </div>
-            <div className="flex justify-start items-center gap-7">
+            <div className="hidden justify-start items-center gap-7 sm:flex">
                 {navdata.map((items, index) => {
                     return (
                         <Link
@@ -32,8 +32,8 @@ export default function Navbar() {
                 })
                 }
             </div>
-            <PrimaryButton label="contact us" />
-            <div className="hidden max-lg:flex">
+            <PrimaryButton label="contact us" className="hidden md:flex" />
+            <div className="hidden max-sm:flex">
                 <List className="w-10 h-10 text-black " />
             </div>
         </nav>
