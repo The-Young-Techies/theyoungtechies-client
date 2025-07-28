@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function ContactUs() {
     return (
-        <section className="text-black w-full h-[645px] max-lg:py-5 flex z-20 bg-white justify-center max-lg:flex-col max-lg:h-full items-center gap-18 px-4">
+        <section className="text-black w-full h-[645px] max-lg:py-5 flex z-20 bg-white justify-between max-lg:flex-col max-lg:h-full items-center px-20">
             <div className="w-[40%] max-lg:w-full h-[90%] flex flex-col gap-4 justify-center">
                 <span className="text-gray-500 font-bold text-sm w-fit uppercase ">Contact Us</span>
                 <h3 className="text-4xl font-bold text-[#0B1026]">Get In <span className="text-blue-600">Touch</span></h3>

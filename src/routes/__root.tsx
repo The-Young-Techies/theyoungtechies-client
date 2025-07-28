@@ -10,7 +10,7 @@ export const Route = createRootRoute({
     <InfoNav/>
       <Navbar/>
       <Outlet />
-      <Footer/>
+      {/* <Footer/> */}
       <TanStackRouterDevtools />
     </>
   ),

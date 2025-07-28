@@ -1,6 +1,6 @@
 export default function AboutUs() {
     return (
-        <section className="p-20 flex flex-col justify-start items-start gap-10">
+        <section className="px-20 my-20 flex flex-col justify-start items-start gap-10">
             <div className="flex justify-between items-center gap-20">
                 <div className="flex flex-col justify-start items-start">
             <p className="text-sm uppercase text-gray-500 font-bold mb-1">about us</p>

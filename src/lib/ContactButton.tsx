@@ -1,9 +1,17 @@
 import { Mail } from "lucide-react";
+import clsx from "clsx"; // Optional: helps merge Tailwind classNames cleanly
 
-export default function ContactButton() {
+type ContactButtonProps = {
+  className?: string;
+};
+
+export default function ContactButton({ className }: ContactButtonProps) {
   return (
     <button
-      className="group relative flex items-center border border-[#3468E9] justify-start w-[45px] h-[45px] bg-neutral-100 hover:w-[160px] rounded-md transition-all duration-300 overflow-hidden shadow-md active:translate-x-[2px] active:translate-y-[2px]"
+      className={clsx(
+        "group relative flex items-center border border-[#3468E9] justify-start w-[45px] h-[45px] bg-neutral-100 hover:w-[160px] rounded-md transition-all duration-300 overflow-hidden shadow-md active:translate-x-[2px] active:translate-y-[2px]",
+        className
+      )}
     >
       <div className="flex items-center justify-center w-full group-hover:w-[30%] transition-all duration-300 pl-0 group-hover:pl-5">
         <Mail className="w-[17px] h-[17px] text-neutral-800" />

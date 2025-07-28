@@ -22,7 +22,7 @@ export default function PrimaryButton({
 
   return (
     <button
-      className={`relative overflow-hidden font-semibold py-3 px-6 rounded-lg transition-all capitalize duration-300 ${bgColor} ${hoverColor} ${textColor} ${className}`}
+      className={`relative overflow-hidden text-body-small md:text-body font-semibold py-3 px-6 rounded-lg transition-all capitalize duration-300 ${bgColor} ${hoverColor} ${textColor} ${className}`}
       onMouseEnter={() => setShinePosition("125%")}
       onMouseLeave={() => setShinePosition("-75%")}
       style={{ position: "relative", overflow: "hidden" }}

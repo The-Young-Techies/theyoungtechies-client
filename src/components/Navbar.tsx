@@ -16,11 +16,11 @@ const navdata: NavAnker[] = [
 
 export default function Navbar() {
     return (
-<nav className="w-full max-lg:px-7 h-fit sticky top-0 bg-white z-50 flex justify-between px-10 items-center shadow-lg">
+<nav className="w-full max-lg:px-7 h-fit sticky top-0 bg-white z-50 flex justify-between px-10 xl:px-20 items-center shadow-lg">
                 <div className="flex justify-start items-center gap-12">
                     <img src={"/images/logo1.jpeg"} width={70} className="max-sm:w-[70px]" height={100} alt={""} />
                 </div>
-                <div className="flex justify-start items-center gap-7">
+                <div className=" justify-start items-center gap-7 hidden sm:flex">
                     {navdata.map((items, index) => {
                         return (
                             <Link
@@ -34,8 +34,8 @@ export default function Navbar() {
                     })
                     }
                 </div>
-                <PrimaryButton label="contact us" />
-                <div className="hidden max-lg:flex">
+                <PrimaryButton label="contact us" className="hidden sm:flex" />
+                <div className="hidden max-sm:flex">
                     <List className="w-10 h-10 text-black " />
                 </div>
             </nav>

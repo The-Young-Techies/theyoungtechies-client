@@ -1,2 +1,93 @@
 @import "tailwindcss";
 
+:root {
+  /* Colors */
+  --color-primary: #E91D24;
+  --color-dark: #000000;
+
+  /* Fixed Font Sizes */
+  --fs-h1: 3.5rem;   /* 60px */
+  --fs-h2: 3.25rem;   /* 52px */
+  --fs-h3: 3rem;      /* 48px */
+  --fs-h4: 2.25rem;   /* 36px */
+  --fs-h5: 1.75rem;   /* 28px */
+  --fs-h6: 1.5rem;    /* 24px */
+  --fs-para:1.25rem;
+  --fs-body: 1rem;           /* 16px */
+  --fs-body-small: 0.875rem; /* 14px */
+  --fs-para-small: 0.75rem;  /* 12px */
+}
+
+/* Heading Classes */
+.text-h1 { font-size: var(--fs-h1); }
+.text-h2 { font-size: var(--fs-h2); }
+.text-h3 { font-size: var(--fs-h3); }
+.text-h4 { font-size: var(--fs-h4); }
+.text-h5 { font-size: var(--fs-h5); }
+.text-h6 { font-size: var(--fs-h6); }
+
+/* Body Text */
+.text-body        { font-size: var(--fs-body); }
+.text-body-small  { font-size: var(--fs-body-small); }
+.text-para-small  { font-size: var(--fs-para-small); }
+.text-para {font-size: var(--fs-para);}
+
+/* Colors */
+.text-primary     { color: var(--color-primary); }
+.text-dark        { color: var(--color-dark); }
+
+/* sm: Variants */
+@media (min-width: 640px) {
+  .sm\:text-h1 { font-size: var(--fs-h1); }
+  .sm\:text-h2 { font-size: var(--fs-h2); }
+  .sm\:text-h3 { font-size: var(--fs-h3); }
+  .sm\:text-h4 { font-size: var(--fs-h4); }
+  .sm\:text-h5 { font-size: var(--fs-h5); }
+  .sm\:text-h6 { font-size: var(--fs-h6); }
+
+  .sm\:text-body        { font-size: var(--fs-body); }
+  .sm\:text-body-small  { font-size: var(--fs-body-small); }
+  .sm\:text-para {font-size: var(--fs-para);}
+}
+
+/* md: Variants */
+@media (min-width: 768px) {
+  .md\:text-h1 { font-size: var(--fs-h1); }
+  .md\:text-h2 { font-size: var(--fs-h2); }
+  .md\:text-h3 { font-size: var(--fs-h3); }
+  .md\:text-h4 { font-size: var(--fs-h4); }
+  .md\:text-h5 { font-size: var(--fs-h5); }
+  .md\:text-h6 { font-size: var(--fs-h6); }
+
+  .md\:text-body        { font-size: var(--fs-body); }
+  .md\:text-body-small  { font-size: var(--fs-body-small); }
+  .md\:text-para {font-size: var(--fs-para);}
+}
+
+/* lg: Variants */
+@media (min-width: 1024px) {
+  .lg\:text-h1 { font-size: var(--fs-h1); }
+  .lg\:text-h2 { font-size: var(--fs-h2); }
+  .lg\:text-h3 { font-size: var(--fs-h3); }
+  .lg\:text-h4 { font-size: var(--fs-h4); }
+  .lg\:text-h5 { font-size: var(--fs-h5); }
+  .lg\:text-h6 { font-size: var(--fs-h6); }
+
+  .lg\:text-body        { font-size: var(--fs-body); }
+  .lg\:text-body-small  { font-size: var(--fs-body-small); }
+  .lg\:text-para {font-size: var(--fs-para);}
+}
+
+/* xl: Variants */
+@media (min-width: 1280px) {
+  .xl\:text-h1 { font-size: var(--fs-h1); }
+  .xl\:text-h2 { font-size: var(--fs-h2); }
+  .xl\:text-h3 { font-size: var(--fs-h3); }
+  .xl\:text-h4 { font-size: var(--fs-h4); }
+  .xl\:text-h5 { font-size: var(--fs-h5); }
+  .xl\:text-h6 { font-size: var(--fs-h6); }
+
+  .xl\:text-body        { font-size: var(--fs-body); }
+  .xl\:text-body-small  { font-size: var(--fs-body-small); }
+  .xl\:text-para {font-size: var(--fs-para);}
+}

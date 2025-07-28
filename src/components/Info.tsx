@@ -17,20 +17,20 @@ export default function InfoNav() {
         }
         ]
     return (
-        <nav className="bg-black px-16 py-1 flex justify-between items-center">
+        <nav className="bg-black px-10 py-1 justify-between items-center hidden sm:flex">
             <span className="flex justify-start items-center gap-1">
                 <MapIcon className="text-blue-300 " size={15}/>
-                <p className="text-sm text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                <p className="text-body-small text-white">Lorem ipsum dolor sit amet consectetur.</p>
             </span>
             <span className="flex justify-start items-center gap-1">
                 <MailIcon className="p-0 m-0 text-blue-300" size={15} />
-                <p className="text-sm text-white">Loremipsum@gmail.com</p>
+                <p className="text-body-small text-white">Loremipsum@gmail.com</p>
             </span>
             <span className="flex justify-start items-center gap-2">
                 {
                     socialLinks.map((value, index) => (
                         <Link to="/" key={index}>
-                            <img src={value.icon} alt="" className="w-5 rounded-full" />
+                            <img src={value.icon} alt="" className="w-4 rounded-full" />
                         </Link>
                     ))
                 }

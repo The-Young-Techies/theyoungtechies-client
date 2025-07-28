@@ -3,8 +3,8 @@ import { Link } from "@tanstack/react-router";
 
 export default function Project() {
     return (
-        <section id="projects" className="py-20 bg-white text-black" >
-            <div className="container flex justify-center gap-20 items-center flex-col">
+        <section id="projects" className="py-20 px-20 bg-white text-black" >
+            <div className="container flex justify-center gap-10 items-center flex-col">
                 <div className="text-center">
                     <h2 className="text-5xl max-sm:text-4xl font-bold">Featured <span className="text-[#3468E9]">Projects</span></h2>
                     <p className="mt-4 text-lg max-sm:text-[17px] text-[#222222ee]  max-w-3xl mx-auto"> Explore a selection of our recent projects that highlight our commitment to quality, creativity, and delivering results that matter.

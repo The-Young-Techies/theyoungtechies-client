@@ -42,7 +42,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full bg-blue-50 px-6 md:px-20 lg:px-32 py-24">
+    <section className="w-full bg-blue-50 px-20 py-24">
       <div className="max-w-full mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4 capitalize">
           frequently <span className="text-blue-500">asked</span> questions

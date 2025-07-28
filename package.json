@@ -22,6 +22,7 @@
     "@tanstack/react-router-devtools": "^1.114.3",
     "@tanstack/router-plugin": "^1.114.3",
     "framer-motion": "^12.23.9",
+    "keen-slider": "^6.8.6",
     "lucide-react": "^0.511.0",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
