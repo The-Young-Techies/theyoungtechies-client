@@ -1,92 +1,103 @@
-import TeamMemberCard from "./TeamCard";
-import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-import { teamMembers } from "@/lib/TeamData";
+// TeamContainer.tsx
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
-export default function TeamMember() {
-    const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-        loop: true,
-        mode: "snap",
-        slides: {
-            perView: 2,
-            spacing: 20,
-        },
-        breakpoints: {
-            "(max-width: 768px)": {
-                slides: {
-                    perView: 1,
-                    spacing: 10,
-                },
-            },
-        },
-    })
+type TeamMember = {
+  name: string;
+  role: string;
+  image: string;
+  socials: {
+    linkedin?: string;
+    twitter?: string;
+    instagram?: string;
+  };
+};
 
-    const prev = () => instanceRef.current?.prev()
-    const next = () => instanceRef.current?.next()
+const teamMembers: TeamMember[] = [
+  {
+    name: "Anuj Mishra",
+    role: "CEO / Founder",
+    image: "/images/ceo.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/anujmishra",
+      twitter: "https://twitter.com/anujmishra",
+      instagram: "https://instagram.com/theyoungtechiesofficial"
+    }
+  },
+  {
+    name: "Anuj Mishra",
+    role: "CEO / Founder",
+    image: "/images/ceo.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/anujmishra",
+      twitter: "https://twitter.com/anujmishra",
+      instagram: "https://instagram.com/theyoungtechiesofficial"
+    }
+  },
+  {
+    name: "Priya Singh",
+    role: "Lead Developer",
+    image: "/images/dev1.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/priyasingh",
+      twitter: "https://twitter.com/priyasingh"
+    }
+  },
+  {
+    name: "Rahul Sharma",
+    role: "UI/UX Designer",
+    image: "/images/uiux.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/rahulsharma",
+      instagram: "https://instagram.com/rahulsharma"
+    }
+  }
+];
 
+function TeamCard({ member }: { member: TeamMember }) {
+  return (
+    <div className="flex flex-col items-center bg-white rounded-2xl shadow-md border border-gray-100 p-6 gap-3 w-full max-w-xs mx-auto">
+      <img
+        src={member.image}
+        alt={member.name}
+        className="w-24 h-24 object-cover rounded-full shadow mb-2"
+        loading="lazy"
+        draggable={false}
+      />
+      <h3 className="text-lg font-bold text-gray-900">{member.name}</h3>
+      <p className="text-blue-700 text-sm font-medium">{member.role}</p>
+      <div className="flex gap-3 justify-center mt-2">
+        {member.socials.linkedin && (
+          <a href={member.socials.linkedin} target="_blank" aria-label="LinkedIn" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900">
+            <FaLinkedin size={22} />
+          </a>
+        )}
+        {member.socials.twitter && (
+          <a href={member.socials.twitter} target="_blank" aria-label="Twitter" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+            <FaTwitter size={22} />
+          </a>
+        )}
+        {member.socials.instagram && (
+          <a href={member.socials.instagram} target="_blank" aria-label="Instagram" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-800">
+            <FaInstagram size={22} />
+          </a>
+        )}
+      </div>
+      
+    </div>
+  );
+}
 
-    const teamMembers = [
-        {
-            name: "Anuj Mishra",
-            role: "CEO/Founder",
-            image: "/images/home-header2.jpg", // your local or hosted image path
-            bgColor: "bg-green-100",
-
-        },
-        {
-            name: "Anuj Mishra",
-            role: "Web developer",
-            image: "/images/home-header2.jpg", // your local or hosted image path
-            bgColor: "bg-purple-100",
-
-        },
-        {
-            name: "Anuj Mishra",
-            role: "Web developer",
-            image: "/images/home-header2.jpg", // your local or hosted image path
-            bgColor: "bg-pink-100",
-
-        },
-        {
-            name: "Anuj Mishra",
-            role: "Web developer",
-            image: "/images/home-header2.jpg", // your local or hosted image path
-            bgColor: "bg-red-100",
-
-        },
-        // Add more...
-    ];
-    return (
-        <section className="w-full py-20 bg-white flex flex-col items-center px-20 mt-10 mb-10 gap-10">
-            <div className="flex flex-col justify-center items-center text-center ">
-                <h2 className="text-h4 font-bold text-gray-900">
-                    Meet Our <span className="text-blue-600">Team</span>
-                </h2>
-                <p className="text-gray-600 max-w-xl mt-4">
-                    We're a young, ambitious team excited to build great things. Here's a closer look at who we are.
-                </p>
-            </div>
-
-            <div ref={sliderRef} className="keen-slider">
-                {teamMembers.map((member, i) => (
-                    <div className="keen-slider__slide" key={i}>
-                        <TeamMemberCard
-                            name={member.name}
-                            role={member.role}
-                            image={member.image}
-                            bgColor={member.bgColor}
-                        />
-                    </div>
-                ))}
-            </div>
-            <div className="flex justify-start mb-6 gap-4">
-                <button onClick={prev} className="px-2.5 py-1 text-h6 leading-8 bg-blue-600 text-white rounded-full">
-                    &larr;
-                </button>
-                <button onClick={next} className="px-2.5 py-1 text-h6 leading-8 bg-blue-600 text-white rounded-full">
-                    &rarr;
-                </button>
-            </div>
-        </section>
-    );
+export default function TeamContainer() {
+  return (
+    <section className="w-full py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-white">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-900 mb-8 text-center">
+        <span className="text-blue-600">Meet</span> Our Team
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items- w-full ">
+        {teamMembers.map((member, idx) => (
+          <TeamCard member={member} key={idx} />
+        ))}
+      </div>
+    </section>
+  );
 }

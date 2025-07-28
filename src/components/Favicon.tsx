@@ -13,6 +13,5 @@ export function Favicon({ href = '/images/favicon.jpeg' }: { href?: string }) {
       document.head.removeChild(link)
     }
   }, [href])
-
   return null
 }

@@ -1,6 +1,6 @@
 export default function AboutUs() {
     return (
-        <section className="px-10 lg:px-20 my-20 flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
+        <section className="px-10 lg:px-16 my-20 flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
             <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="flex flex-col md:flex-row justify-start md:justify-between items-center gap-3 md:gap-10">
                     <div className="flex flex-col justify-center items-center text-center md:justify-start md:items-start md:text-start">

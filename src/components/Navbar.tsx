@@ -1,41 +1,53 @@
 import { List } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import PrimaryButton from "@/lib/PrimaryButton";
+
 interface NavAnker {
-    anker: string;
+  anker: string;
 }
 
 const navdata: NavAnker[] = [
-    { anker: "About" },
-    { anker: "Services" },
-    { anker: "Projects" },
+  { anker: "About" },
+  { anker: "Services" },
+  { anker: "Projects" },
 ];
 
-
 export default function Navbar() {
-    return (
-        <nav className="w-full max-lg:px-7 h-fit sticky top-0 bg-white z-50 flex justify-between px-10 items-center shadow-lg">
-            <div className="flex justify-start items-center gap-12">
-                <img src={"/images/logo1.jpeg"} width={70} className="max-sm:w-[70px]" height={100} alt={""} />
-            </div>
-            <div className="hidden justify-start items-center gap-7 sm:flex">
-                {navdata.map((items, index) => {
-                    return (
-                        <Link
-                            key={index}
-                            to="."
-                            className="relative text-lg text-black hover:text-blue-600 font-semibold font-sans after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
-                        >
-                            {items.anker}
-                        </Link>
-                    )
-                })
-                }
-            </div>
-            <PrimaryButton label="contact us" className="hidden md:flex" />
-            <div className="hidden max-sm:flex">
-                <List className="w-10 h-10 text-black " />
-            </div>
-        </nav>
-    )
+  return (
+    <nav className="w-full sticky top-0 bg-white z-50 shadow-md flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-16 h-[64px]">
+      {/* Logo */}
+      <div className="flex items-center">
+        <img
+          src="/images/youngtech-logos.png"
+          alt="The Young Techies Logo"
+          className="max-sm:w-[70px] h-12 object-contain"
+          loading="lazy"
+          draggable={false}
+        />
+      </div>
+
+      {/* Navigation links */}
+      <div className="hidden sm:flex items-center space-x-10">
+        {navdata.map(({ anker }, index) => (
+          <Link
+            key={index}
+            to="."
+            className="relative text-lg font-semibold font-sans text-gray-900 hover:text-blue-600 transition-colors after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {anker}
+          </Link>
+        ))}
+      </div>
+
+      {/* Contact button */}
+      <div className="hidden md:flex">
+        <PrimaryButton label="Contact Us" className="cursor-pointer"/>
+      </div>
+
+      {/* Mobile menu icon */}
+      <div className="flex sm:hidden items-center">
+        <List className="w-8 h-8 text-gray-900 cursor-pointer hover:text-blue-600 transition-colors" aria-label="Open menu" />
+      </div>
+    </nav>
+  );
 }

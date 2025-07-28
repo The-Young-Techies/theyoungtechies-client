@@ -9,6 +9,7 @@ import ServiceCarousel from '@/components/Carousel'
 import TeamMember from '@/components/Team'
 import FaqSection from '@/components/Faqs'
 import { createFileRoute } from '@tanstack/react-router'
+import Counter from '@/components/Counter'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -21,6 +22,7 @@ function App() {
       <ServiceCarousel />
       <AboutUs />
       <OurApproach />
+      <Counter/>
       {/* <Project /> */}
       <Services />
       <GetStarted />

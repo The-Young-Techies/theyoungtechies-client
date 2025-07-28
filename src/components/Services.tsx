@@ -1,35 +1,46 @@
 import { services } from "@/lib/header";
 
 export default function Services() {
-    return (
-        <section className="py-12 px-5 sm:px-10 lg:px-20 flex flex-col justify-center  items-center">
-            <p className="text-sm uppercase text-gray-500 font-bold md:gap-1">Our Services</p>
-            <h2 className="text-h6 md:text-h5 lg:text-h4 md:max-w-2xl font-bold mb-5 md:mb-10 capitalize text-center"><span className="text-blue-600">services</span> That Deliver <span className="text-blue-600">Results</span> and Bring Your Ideas to Life</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                {services.map((value, index) => (
-                    <div
-                        key={index}
-                        className="flex gap-3 justify-start items-start border border-gray-300 rounded-lg shadow-sm w-full"
-                    >
-                        <img
-                            src={value.icon}
-                            alt={value.title}
-                            className="w-20 md:w-28 h-[100%] object-cover rounded-l-lg "
-                        />
-                        <div className={`flex flex-col justify-start items-start gap-2 p-3 md:p-4`} >
-                            <h4 className="text-body font-bold">{value.title}</h4>
-                            <p className="text-gray-600 text-body-small">{value.description}</p>
-                            <button className="flex group justify-center items-baseline gap-1 font-semibold mt-2">
-                                <p className=" text-md text-blue-600">
-                                    Learn more <span className="inline-block text-md -rotate-[30deg] group-hover:rotate-0 transition-all">&rarr;</span>
-                                </p>     
-                           </button>
-
-                        </div>
-                    </div>
-                ))}
+  return (
+    <section className="w-full py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-white">
+      <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-semibold mb-2 text-center">
+        Our Services
+      </p>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl max-w-3xl font-extrabold mb-8 text-center text-gray-900 leading-tight">
+        <span className="text-blue-600">Services</span> That Deliver{" "}
+        <span className="text-blue-600">Results</span> and Bring Your Ideas to Life
+      </h2>
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {services.map((value, index) => (
+          <div
+            key={index}
+            className="group flex flex-col items-center justify-between bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg hover:scale-[1.025] transition-all duration-200 p-6 min-h-[320px]"
+          >
+            <div className="flex items-center justify-center h-20 w-20 rounded-xl bg-blue-50 mb-4 shadow ring-1 ring-blue-200">
+              <img
+                src={value.icon}
+                alt={value.title}
+                className="w-12 h-12 object-contain"
+                loading="lazy"
+                draggable={false}
+              />
             </div>
-        </section>
-    );
+            <div className="flex flex-col gap-2 items-center text-center flex-1">
+              <h4 className="text-lg md:text-xl font-semibold text-gray-900">{value.title}</h4>
+              <p className="text-gray-600 text-base">{value.description}</p>
+            </div>
+            <button
+              className="mt-6 flex items-center font-semibold text-blue-700 hover:text-blue-900 group transition-colors"
+              tabIndex={0}
+            >
+              <span>Learn more</span>
+              <span className="ml-2 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                &rarr;
+              </span>
+            </button>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

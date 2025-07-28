@@ -3,7 +3,7 @@ import PrimaryButton from "@/lib/PrimaryButton";
 
 export default function OurApproach() {
     return (
-        <section className="w-full py-20 bg-blue-50 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-28 px-10 lg:px-20">
+        <section className="w-full py-20 bg-blue-50 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-28 px-10 lg:px-16">
             <div className="flex flex-col justify-start items-center gap-4 md:gap-6 text-center md:text-start md:items-start">
                 <h1 className="text-h6 md:text-h5 xl:text-h4 text-gray-900 font-bold ">
                     Our Simple & Basic <span className="text-blue-600">Approach</span>

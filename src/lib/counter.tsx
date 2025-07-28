@@ -10,8 +10,8 @@ export const eventStats: IEventStats[] = [
   {
     icon: "🚀",
     label: 'Projects Completed',
-    value: 120,
-    suffix: '+',
+    value: 10,
+    suffix: '',
     description: 'Successful launches',
   },
   {
@@ -24,14 +24,14 @@ export const eventStats: IEventStats[] = [
   {
     icon: "🤝",
     label: 'Clients Served',
-    value: 85,
+    value: 6,
     suffix: '',
     description: 'Satisfied clients',
   },
   {
     icon: "🌐",
     label: 'Technologies Used',
-    value: 15,
+    value: 20,
     suffix: '+',
     description: 'Modern frameworks & tools',
   },

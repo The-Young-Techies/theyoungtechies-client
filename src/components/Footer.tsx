@@ -1,56 +1,103 @@
 import { contactInfo, footerSections } from "@/lib/footer";
 import { Link } from "@tanstack/react-router";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+
 export default function Footer() {
-    return (
-        <footer className="w-full bg-blue-900  flex justify-center items-center py-10 flex-col ">
-            <div className="max-w-7xl w-full px-6 py-12 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-                {/* Logo & Description */}
-                <div>
-                    <Link to="/" className="inline-flex items-center mb-5">
-                        <img src="/images/png logo.png" alt="Logo" width={50} height={40} />
-                    </Link>
-                    <p className="text-white text-sm leading-relaxed max-w-xs">
-                        High-performance digital experiences. Stunning websites. Seamless UX.
-                    </p>
-                    <div className="mt-6 flex space-x-5 text-white">
-                        {[Facebook, Twitter, Instagram, Linkedin].map((Icon, idx) => (
-                            <Link key={idx} to="." className="hover:text-accent transition" aria-label="Social Link">
-                                <Icon className="w-5 h-5" />
-                            </Link>
-                        ))}
-                    </div>
-                </div>
+  return (
+    <footer className="w-full bg-blue-900 py-14 flex justify-center items-center flex-col px-6 sm:px-10 lg:px-16 select-none">
+      <div className="w-full grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        
+        {/* Logo & Description */}
+        <div className="flex flex-col">
+          <Link to="/" aria-label="Homepage" className="inline-flex items-center mb-6 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
+            <img
+              src="/images/youngtech-logos.png"
+              alt="The Young Techies Logo"
+              width={50}
+              height={40}
+              className="object-contain"
+              loading="lazy"
+            />
+            <span className="sr-only">The Young Techies</span>
+          </Link>
 
-                {/* Mapped Link Sections */}
-                {footerSections.map((section) => (
-                    <div key={section.title}>
-                        <h3 className="text-lg font-semibold mb-6 text-white">{section.title}</h3>
-                        <nav className="flex flex-col space-y-3 text-white text-sm">
-                            {section.links.map((link) => (
-                                <Link key={link.label} to={link.href} className="hover:text-accent transition-colors">
-                                    {link.label}
-                                </Link>
-                            ))}
-                        </nav>
-                    </div>
-                ))}
+          <p className="text-white text-sm leading-relaxed max-w-xs">
+            High-performance digital experiences. Stunning websites. Seamless UX.
+          </p>
 
-                {/* Contact Info */}
-                <div>
-                    <h3 className="text-lg font-semibold mb-6 text-white">Contact Us</h3>
-                    {contactInfo.map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-3 mb-3 text-white text-sm">
-                            {item.icon}
-                            <a href={item.href} className="hover:text-accent transition-colors">{item.value}</a>
-                        </div>
-                    ))}
-                </div>
-            </div>
+          <div className="mt-8 flex space-x-6 text-white">
+            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, idx) => (
+              <Link
+                key={idx}
+                to="."
+                aria-label={`Follow us on ${Icon.displayName || 'social media'}`}
+                className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+              >
+                <Icon className="w-6 h-6" />
+              </Link>
+            ))}
+          </div>
+        </div>
 
-            <div className="border-t w-[90%] border-white pt-6 text-center text-sm text-white select-none">
-                © {new Date().getFullYear()} The Young Techies. All rights reserved.
-            </div>
-        </footer>
-    );
+        {/* Mapped Link Sections */}
+        {footerSections.map((section) => (
+          <section
+            key={section.title}
+            aria-labelledby={`footer-heading-${section.title.toLowerCase().replace(/\s+/g, '-')}`}
+          >
+            <h3
+              id={`footer-heading-${section.title.toLowerCase().replace(/\s+/g, '-')}`}
+              className="text-white text-lg font-semibold mb-6 uppercase tracking-wider"
+            >
+              {section.title}
+            </h3>
+            <nav className="flex flex-col space-y-3 text-white text-sm" aria-label={section.title}>
+              {section.links.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </section>
+        ))}
+
+        {/* Contact Info */}
+        <section aria-labelledby="footer-contact">
+          <h3
+            id="footer-contact"
+            className="text-white text-lg font-semibold mb-6 uppercase tracking-wider"
+          >
+            Contact Us
+          </h3>
+          <address className="not-italic">
+            {contactInfo.map((item, idx) => (
+              <div key={idx} className="flex items-center gap-3 mb-4 text-white text-sm">
+                <span className="flex items-center justify-center w-9 h-9 bg-blue-700 rounded-full">
+                  {item.icon}
+                </span>
+                {item.href.startsWith("mailto:") || item.href.startsWith("tel:") ? (
+                  <a
+                    href={item.href}
+                    className="hover:text-blue-400 transition-colors break-words focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="break-words">{item.value}</p>
+                )}
+              </div>
+            ))}
+          </address>
+        </section>
+      </div>
+
+      <div className="border-t border-blue-700 w-full max-w-7xl mt-12 pt-6 text-center text-xs text-blue-300">
+        &copy; {new Date().getFullYear()} The Young Techies. All rights reserved.
+      </div>
+    </footer>
+  );
 }
