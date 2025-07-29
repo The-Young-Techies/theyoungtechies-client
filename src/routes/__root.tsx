@@ -1,16 +1,11 @@
-import Footer from '@/components/Footer'
-import InfoNav from '@/components/Info'
-import Navbar from '@/components/Navbar'
-import { Favicon } from '@/components/Favicon'
+import Footer from '@/components/common/Footer'
+import Navbar from '@/components/common/Navbar'
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 export const Route = createRootRoute({
   component: () => (
     <>
-          <Favicon />
-
-    <InfoNav/>
       <Navbar/>
       <Outlet />
       <Footer/>
