@@ -4,7 +4,6 @@ import GetStarted from '@/components/common/GetStarted'
 import Header from '@/components/home/Header/Header'
 import Services from '@/components/home/Services/Services'
 import ServiceCarousel from '@/components/common/Carousel'
-import TeamMember from '@/components/home/Team/Team'
 import FaqSection from '@/components/home/Faq/Faqs'
 import { createFileRoute } from '@tanstack/react-router'
 import Counter from '@/components/home/Counter/Counter'
@@ -27,6 +26,7 @@ function App() {
       <Services />
       <GetStarted />
       {/* <TeamMember /> */}
+      
       <FaqSection />
       <ContactUs />
     </main>

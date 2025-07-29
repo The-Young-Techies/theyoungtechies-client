@@ -40,9 +40,9 @@ export default function Header() {
           </ScrollLink>
 
           {showContact && (
-             <ScrollLink to="contact" smooth={true} duration={7*150}>
-            <ContactButton className="flex min-[500px]:hidden md:flex cursor-pointer" />
-             </ScrollLink>
+            <ScrollLink to="contact" smooth={true} duration={7*150}>
+              <ContactButton className="flex min-[500px]:hidden md:flex cursor-pointer" />
+            </ScrollLink>
           )}
         </div>
       </div>

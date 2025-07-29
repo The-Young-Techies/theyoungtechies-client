@@ -20,7 +20,7 @@ export const socialLinks: SocialLink[] = [
     label: "Twitter / X",
   },
   {
-    icon: '/images/social-icons/whatsapp-icon.webp',
+    icon: '/images/social-icons/whatsapp-icon.png',
     path: "https://wa.me/9310256281",
     label: "WhatsApp",
   },
@@ -133,13 +133,12 @@ export const steps: ApproachStep[] = [
   },
 ];
 
-//projectsData
 export const projectsData: Project[] = [
   {
     id: "1",
     title: "Skillsyard",
     description:
-      "Online learning platform with LMS features, admin dashboard, and student progress tracking. in this worked and added services and functionalities in it.",
+      "Online learning platform with LMS features, admin dashboard, and student progress tracking. In this, worked and added services and functionalities in it.",
     liveUrl: "https://skillsyard.com/",
     imageUrl: "/images/projects/skillsyard.png",
     techStack: ["Next.js", "TypeScript", "MongoDB", "Tailwind", "Redux", "Nestjs", "graphQL"],
@@ -148,7 +147,7 @@ export const projectsData: Project[] = [
     id: "2",
     title: "Tryst Fest",
     description:
-      "College tech fest website with schedule, registrations, and event details, built for Tryst IIT Delhi.",
+      "Official website for Keshav Mahavidyalaya annual tech fest, featuring an interactive event schedule, user registrations, and detailed information on workshops and competitions. Built with modular and responsive design to handle high-traffic student engagement.",
     imageUrl: "/images/projects/tryst-fest-website.png",
     githubUrl: "https://github.com/iam-mayank-kansal/tryst-website",
     liveUrl: "https://tryst-website-bjvs5quyt-mayanks-projects-b06bc3e0.vercel.app/",
@@ -158,7 +157,7 @@ export const projectsData: Project[] = [
     id: "3",
     title: "Cancer Heal",
     description:
-      "AI-powered assistant helping cancer patients with symptom tracking and hospital discovery.",
+      "AI-powered health support system designed for cancer patients to track symptoms, access hospital data, and receive personalized suggestions. Contributed to the intelligent assistant module and ensured a smooth user experience.",
     imageUrl: "/images/projects/cancerheal.png",
     liveUrl: "https://cancerheal.co.in/",
     techStack: ["HTML", "CSS", "JavaScript", "lambda"],
@@ -167,7 +166,7 @@ export const projectsData: Project[] = [
     id: "4",
     title: "Hotelswale",
     description:
-      "A hotel booking platform with admin CMS and real-time availability management.",
+      "Dynamic hotel booking platform featuring real-time room availability, search filters, and a fully functional admin CMS. Developed backend modules and ensured data integrity and smooth user interactions.",
     imageUrl: "/images/projects/hotelswale-website.png",
     liveUrl: "https://hotelswale.com/",
     techStack: ["Node.Js", "Express.Js", "EJS", "JavaScript", "CSS", "HTML"],
@@ -176,12 +175,22 @@ export const projectsData: Project[] = [
     id: "5",
     title: "Wolf Pharma",
     description:
-      "Dark-themed muscle building website with sleek animations and product filtering.",
+      "High-performance eCommerce website tailored for bodybuilding and wellness products. Includes sleek animations, dark-themed design, product filtering, and QR code verification for product authenticity.",
     imageUrl: "/images/projects/wolf-pharma.png",
     liveUrl: "https://wolfpharmacompany.com/",
     techStack: ["React.js", "Tailwind", "Framer Motion", "QR-Code"],
   },
+  {
+    id: "6",
+    title: "Hanushiv Cricket Academy",
+    description:
+      "Modern and responsive website built for a local cricket academy, highlighting coaching programs, location maps, and contact integration. Focused on clean UI and ease of use for both students and staff.",
+    imageUrl: "/images/projects/hanushiv-website.png",
+    liveUrl: "https://hanushiv.com/", 
+    techStack: ["HTML", "CSS", "JavaScript"],
+  },
 ];
+
 
 // serviceData 
 export const services: Service[] = [
