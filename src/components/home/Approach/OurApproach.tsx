@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function OurApproach() {
   return (
-    <section className="w-full px-6 sm:px-10 md:px-14 lg:px-16 mb-20 py-20 bg-blue-50 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-28">
+    <section className="w-full px-6 sm:px-10 md:px-14 lg:px-16  py-20 bg-blue-50 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-28">
       <div className="flex flex-col justify-start items-center gap-4 md:gap-6 text-center md:text-start md:items-start">
         <h1 className="text-h6 md:text-h5 xl:text-h4 text-gray-900 font-bold ">
           Our Simple & Basic <span className="text-blue-600">Approach</span>
