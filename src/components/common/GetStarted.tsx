@@ -1,11 +1,12 @@
 "use client";
 
 import { ctaData } from "@/utils/data";
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function GetStarted() {
   return (
     <section
-      className="relative m-auto max-lg:py-5 mx-16 rounded-xl z-10 gap-4 px-5 md:px-10 flex flex-col md:flex-row justify-center text-center md:text-start md:justify-between items-center max-lg:h-full h-[150px]"
+      className="relative m-auto px-6 sm:px-10 md:px-14 lg:px-16 mb-20 max-lg:py-5 mx-16 rounded-xl z-10 gap-4 flex flex-col md:flex-row justify-center text-center md:text-start md:justify-between items-center max-lg:h-full h-[150px]"
       style={{
         backgroundImage: `url(${ctaData.backgroundImage})`,
         backgroundRepeat: "no-repeat",
@@ -19,9 +20,11 @@ export default function GetStarted() {
         </h2>
         <p className="text-body-small text-gray-200">{ctaData.subText}</p>
       </span>
-      <button className="text-black bg-amber-200 py-2 px-7 rounded-lg text-lg capitalize font-bold">
-        {ctaData.buttonText}
-      </button>
+       <ScrollLink to="contact" smooth={true} duration={1*150}>
+        <button className="text-black bg-amber-200 py-2 px-7 rounded-lg text-lg capitalize font-bold">
+          {ctaData.buttonText}
+        </button>
+        </ScrollLink>
     </section>
   );
 }

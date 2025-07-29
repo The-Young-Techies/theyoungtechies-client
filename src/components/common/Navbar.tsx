@@ -30,14 +30,14 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
                     <X className="w-8 h-8 text-white hover:text-blue-400 transition-colors" />
                 </button>
             </div>
-            <div className="flex flex-col items-center justify-center h-full -mt-20 text-center">
+            <div className="flex flex-col justify-center items-center h-full -mt-20 text-center">
                 {navData.map(({ anker, href }) => (
                     <ScrollLink to={href} key={anker} smooth={true} duration={500} className="cursor-pointer">
                         <span onClick={onClose} className="block py-4 text-3xl font-semibold hover:text-blue-400 transition-colors">{anker}</span>
                     </ScrollLink>
                 ))}
                 <div className="mt-8">
-                    <ScrollLink to="contact" smooth={true} duration={500}>
+                    <ScrollLink to="contact" smooth={true} duration={8*150} >
                         <PrimaryButton label="Contact Us" className="cursor-pointer" onClick={onClose} />
                     </ScrollLink>
                 </div>
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="hidden md:flex">
-                    <ScrollLink to="#contact" smooth={true} duration={500}>
+                    <ScrollLink to="contact" smooth={true} duration={8*150}>
                         <PrimaryButton label="Contact Us" className="cursor-pointer" />
                     </ScrollLink>
                 </div>

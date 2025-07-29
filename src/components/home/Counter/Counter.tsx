@@ -6,7 +6,7 @@ export default function Counter() {
   return (
     <section
       className="
-        w-full min-h-[320px] py-12 px-16 sm:py-16 flex flex-col items-start justify-center
+        w-full min-h-[320px] py-12 sm:py-16 flex flex-col items-start justify-center mb-20 px-6 sm:px-10 md:px-14 lg:px-16
         bg-cover bg-fixed bg-center bg-no-repeat
         bg-[url('https://t4.ftcdn.net/jpg/08/10/40/51/360_F_810405110_yGQETirKk1O25jZ1H65f3IOz7SjoBPsZ.jpg')]
         relative

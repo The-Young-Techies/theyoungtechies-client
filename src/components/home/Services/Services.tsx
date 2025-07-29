@@ -2,7 +2,7 @@ import { services } from "@/utils/data";
 
 export default function Services() {
   return (
-    <section  id="services" className="w-full py-16 px-4 sm:px-8 lg:px-16 flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-white">
+    <section  id="services" className="w-full px-6 sm:px-10 md:px-14 lg:px-16 mb-20 flex flex-col items-center bg-gradient-to-b from-white via-blue-50 to-white">
       <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-semibold mb-2 text-center">
         Our Services
       </p>

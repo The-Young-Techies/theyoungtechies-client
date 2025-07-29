@@ -2,7 +2,7 @@ import { aboutContent } from "../../../utils/data";
 
 export default function AboutUs() {
     return (
-        <section id="about" className="px-10 lg:px-16 my-20 flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
+        <section id="about" className=" px-6 sm:px-10 md:px-14 lg:px-16 mb-20 flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
             {/* Top Section */}
             <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="flex flex-col md:flex-row justify-start md:justify-between items-center gap-3 md:gap-10">

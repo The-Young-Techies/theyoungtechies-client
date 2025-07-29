@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function InfoNav() {
   return (
-    <nav className="hidden sm:flex bg-black text-white px-4 sm:px-16 py-3 justify-between items-center gap-4 text-xs md:text-sm select-none" aria-label="Contact and Social Links">
+    <nav className="hidden sm:flex bg-black text-white px-6 sm:px-10 md:px-14 lg:px-16 py-3 justify-between items-center gap-4 text-xs md:text-sm select-none" aria-label="Contact and Social Links">
            <div className="flex items-center gap-2 whitespace-nowrap">
                <Mail className="text-blue-400" size={18} />
                <a href="mailto:contact@theyoungtechies.com" className="hover:text-blue-400 transition-colors">contact@theyoungtechies.com</a>

@@ -9,8 +9,8 @@ const Project = () => {
   const hasMoreProjects = visibleProjects < projectsData.length;
 
   return (
-    <section id="projects" className="py-20 px-4 md:px-16 bg-white text-black">
-      <div className="container mx-auto flex justify-center gap-10 items-center flex-col">
+    <section id="projects" className=" bg-white text-black mb-20 px-6 sm:px-10 md:px-14 lg:px-16">
+      <div className="container mx-auto flex justify-center gap-4 md:gap-10 items-center flex-col">
         <div className="text-center">
           <h2 className="text-5xl max-sm:text-4xl font-bold">
             Featured <span className="text-[#3468E9]">Projects</span>

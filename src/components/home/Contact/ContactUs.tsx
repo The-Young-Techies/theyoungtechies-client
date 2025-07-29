@@ -5,7 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function ContactUs() {
   return (
-    <section id="contact" className="relative py-16 px-4 md:px-10 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-slate-100 min-h-[700px] flex justify-center items-center">
+    <section id="contact" className="relative px-6 sm:px-10 md:px-14 lg:px-16 py-20 bg-gradient-to-br from-blue-50 via-white to-slate-100 min-h-[700px] flex justify-center items-center">
       {/* MAIN WRAPPER */}
       <div className="w-full  mx-auto flex flex-col md:flex-row gap-10 md:gap-16 items-center">
         {/* LEFT: Contact info & value prop */}

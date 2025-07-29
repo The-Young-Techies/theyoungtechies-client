@@ -22,12 +22,12 @@ export default function Header() {
 
   return (
     <header
-      className="w-full h-[85vh] flex flex-col md:flex-row justify-center min-[550px]:py-5 md:justify-between md:items-center items-start px-10 xl:px-16 gap-5 relative bg-[url('/images/header3.jpg')] bg-no-repeat bg-left bg-cover"
+      className="w-full h-[85vh] px-6 sm:px-10 md:px-14 lg:px-16 flex flex-col md:flex-row justify-center min-[550px]:py-5 md:justify-between md:items-center items-start xl:px-16 gap-5 sm:gap-2 md:gap-5 relative bg-[url('/images/header3.jpg')] bg-no-repeat bg-left bg-cover"
       aria-label="Main header showcasing our services and client ratings"
     >
       {/* Text Section */}
-      <div className="flex flex-col justify-start items-start gap-4 xl:gap-7 text-start z-10 md:w-2xl xl:w-3xl">
-        <h1 className="text-black text-h5 min-[550px]:text-h5 sm:text-h4 md:text-h4 lg:text-h3 xl:text-h1 font-bold leading-8 sm:leading-10 md:leading-11 xl:leading-14">
+      <div className="flex flex-col justify-start items-start gap-4 sm:gap-3 xl:gap-7 text-start z-10 md:w-xl xl:w-3xl">
+        <h1 className="text-black text-h5 min-[550px]:text-h5 sm:text-h5 md:text-h4 lg:text-h3 xl:text-h1 font-bold leading-8 sm:leading-10 md:leading-11 xl:leading-14">
           {title} <span className="text-blue-500">{highlight}</span>
         </h1>
         <p className="text-gray-700 text-body-small md:text-body lg:text-para">
@@ -35,12 +35,12 @@ export default function Header() {
         </p>
         <div className="flex flex-col md:flex-row justify-start items-start gap-2">
 
-          <ScrollLink to="services" smooth={true} duration={500}>
+          <ScrollLink to="services" smooth={true} duration={4*150}>
             <PrimaryButton label={primaryButton} className="cursor-pointer" />
           </ScrollLink>
 
           {showContact && (
-             <ScrollLink to="contact" smooth={true} duration={500}>
+             <ScrollLink to="contact" smooth={true} duration={7*150}>
             <ContactButton className="flex min-[500px]:hidden md:flex cursor-pointer" />
              </ScrollLink>
           )}
@@ -48,7 +48,7 @@ export default function Header() {
       </div>
 
       {/* Image Section */}
-      <div className="relative hidden min-[500px]:flex w-[400px] h-[180px] min-[550px]:w-[400px] min-[550px]:h-[200px] md:w-[400px] md:h-[300px] xl:w-[600px] xl:h-[60vh] rounded-xl ">
+      <div className="relative hidden min-[500px]:flex w-[300px] h-[100px] min-[550px]:w-[250px] min-[550px]:h-[120px] md:w-[400px] md:h-[300px] xl:w-[600px] xl:h-[60vh] rounded-xl ">
         <img
           src={imageUrl}
           alt={imageAlt}
