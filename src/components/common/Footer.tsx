@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <Link to="/" aria-label="Homepage" className="inline-flex items-center mb-6 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
             <img
-              src="/images/youngtech-logos.png"
+              src="/images/logos/youngtech-logos.png"
               alt="The Young Techies Logo"
               width={50}
               height={40}

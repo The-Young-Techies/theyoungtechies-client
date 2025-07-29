@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className="w-full h-[85vh] px-6 sm:px-10 md:px-14 lg:px-16 flex flex-col md:flex-row justify-center min-[550px]:py-5 md:justify-between md:items-center items-start xl:px-16 gap-5 sm:gap-2 md:gap-5 relative bg-[url('/images/header3.jpg')] bg-no-repeat bg-left bg-cover"
+      className="w-full h-[85vh] px-6 sm:px-10 md:px-14 lg:px-16 flex flex-col md:flex-row justify-center min-[550px]:py-5 md:justify-between md:items-center items-start xl:px-16 gap-5 sm:gap-2 md:gap-5 relative bg-[url('/images/header/header3.jpg')] bg-no-repeat bg-left bg-cover"
       aria-label="Main header showcasing our services and client ratings"
     >
       {/* Text Section */}

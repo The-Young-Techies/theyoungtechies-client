@@ -10,27 +10,27 @@ export const navData: NavLink[] = [
 // social links
 export const socialLinks: SocialLink[] = [
   {
-    icon: '/images/linked-in-icon.png',
+    icon: '/images/social-icons/linked-in-icon.png',
     path: "https://www.linkedin.com/company/106689660/admin/dashboard/",
     label: "LinkedIn",
   },
   {
-    icon: '/images/X-icon.png',
+    icon: '/images/social-icons/X-icon.png',
     path: "https://x.com/theyoungtechies",
     label: "Twitter / X",
   },
   {
-    icon: '/images/whatsapp-icon.webp',
+    icon: '/images/social-icons/whatsapp-icon.webp',
     path: "https://wa.me/9310256281",
     label: "WhatsApp",
   },
   {
-    icon: '/images/instagram-icon.png',
+    icon: '/images/social-icons/instagram-icon.png',
     path: "https://www.instagram.com/theyoungtechiesofficial/",
     label: "Instagram",
   },
   {
-    icon: '/images/facebook-icon.png',
+    icon: '/images/social-icons/facebook-icon.png',
     path: "https://www.facebook.com/profile.php?id=61575130954126",
     label: "Facebook",
   },
@@ -46,7 +46,7 @@ export const aboutContent = {
       id: "our-story",
       title: "our story",
       text: "We started with a simple goal: to create meaningful digital work that blends design, technology, and marketing. Since day one, we've been focused on building things that not only look good but actually help businesses grow.",
-      bg: "bg-[linear-gradient(to_top,rgba(0,0,0,0.7),rgba(0,0,0,0.3),transparent),url('/images/our-story.jpg')]",
+      bg: "bg-[linear-gradient(to_top,rgba(0,0,0,0.7),rgba(0,0,0,0.3),transparent),url('/images/about/our-story.jpg')]",
       textColor: "text-white",
     },
     {
@@ -189,37 +189,37 @@ export const services: Service[] = [
     title: "Website Development",
     description: "Custom-built websites tailored to your business needs and goals.",
     bgColor: "#EDE8FF",
-    icon: "/images/web-dev-service.jpg",
+    icon: "/images/services/web-dev-service.jpg",
   },
   {
     title: "E-Commerce Solutions",
     description: "We Help You To Robust e-commerce platforms to boost your online sales.",
     bgColor: "#FFE3E3",
-    icon: "/images/e-commerce-solutions.jpg",
+    icon: "/images/services/e-commerce-solutions.jpg",
   },
   {
     title: "Mobile Development",
     description: "Improve your visibility on search engines with expert SEO.",
     bgColor: "#E4F1FF",
-    icon: "/images/mobile-development.jpg",
+    icon: "/images/services/mobile-development.jpg",
   },
   {
     title: "UI/UX Design",
     description: "Create delightful user experiences with our UI/UX services.",
     bgColor: "#FFF0E1",
-    icon: "/images/ui-ux-design.jpg",
+    icon: "/images/services/ui-ux-design.jpg",
   },
   {
     title: "Custom Web Apps",
     description: "Advanced web applications designed to scale and perform.",
     bgColor: "#F1E4FF",
-    icon: "/images/customise-web-apps.jpg",
+    icon: "/images/services/customise-web-apps.jpg",
   },
   {
     title: "Social Media Marketing",
     description: "Advanced web applications designed to scale and perform.",
     bgColor: "#F1E4FF",
-    icon: "/images/social-media-marketing.jpg",
+    icon: "/images/services/social-media-marketing.jpg",
   },
 ];
 
@@ -373,7 +373,7 @@ export const ctaData: CTAData = {
   subText:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti?",
   buttonText: "contact us",
-  backgroundImage: "/images/blue-bg.jpg",
+  backgroundImage: "/images/get-started/blue-bg.jpg",
 };
 
 // Header Data 
@@ -384,7 +384,7 @@ export const headerContent: HeaderContent = {
     "With our cutting-edge UI/UX, unique web apps, high-converting e-commerce sites, and astute SEO, we help brands stand out. We ensure that your online presence truly functions, from design to deployment and even social media.",
   primaryButton: "view our services",
   showContact: true,
-  imageUrl: "/images/home-header.jpg",
+  imageUrl: "/images/header/home-header.jpg",
   imageAlt: "Showcase of digital performance",
   ratings: {
     label: "client ratings",
