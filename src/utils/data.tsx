@@ -40,7 +40,7 @@ export const socialLinks: SocialLink[] = [
 export const aboutContent = {
   title: "Helping brands grow with design, tech, and marketing that works.",
   description:
-    "We’re a creative agency focused on building standout digital experiences. From intuitive UI/UX and custom web applications to e-commerce platforms, SEO, and social media marketing—we bring ideas to life and help businesses grow online.",
+    "We're a team of web designers and developers creating websites, dashboards, and e-commerce platforms that are visually engaging, user-friendly, and SEO-optimized. From new builds to revamps and maintenance, we deliver solutions that drive growth.",
   sections: [
     {
       id: "our-story",
@@ -186,7 +186,7 @@ export const projectsData: Project[] = [
     description:
       "Modern and responsive website built for a local cricket academy, highlighting coaching programs, location maps, and contact integration. Focused on clean UI and ease of use for both students and staff.",
     imageUrl: "/images/projects/hanushiv-website.png",
-    liveUrl: "https://hanushiv.com/", 
+    liveUrl: "https://hanushiv.com/",
     techStack: ["HTML", "CSS", "JavaScript"],
   },
 ];
@@ -196,40 +196,53 @@ export const projectsData: Project[] = [
 export const services: Service[] = [
   {
     title: "Website Development",
-    description: "Custom-built websites tailored to your business needs and goals.",
+    description: "We create responsive, high-performance websites tailored to your business goals using the latest web technologies and frameworks.",
     bgColor: "#EDE8FF",
-    icon: "/images/services/web-dev-service.jpg",
+    icon: "/images/services/web-dev-icon.png",
   },
   {
     title: "E-Commerce Solutions",
-    description: "We Help You To Robust e-commerce platforms to boost your online sales.",
+    description: "Launch your online store with a secure, scalable e-commerce platform that supports payments, product management, inventory, and customer engagement.",
     bgColor: "#FFE3E3",
-    icon: "/images/services/e-commerce-solutions.jpg",
+    icon: "/images/services/e-commerce-icon.png",
   },
   {
-    title: "Mobile Development",
-    description: "Improve your visibility on search engines with expert SEO.",
+    title: "Website Design",
+    description: "Our team designs visually appealing, user-friendly websites that reflect your brand identity and deliver a seamless user experience across all devices.",
     bgColor: "#E4F1FF",
-    icon: "/images/services/mobile-development.jpg",
+    icon: "/images/services/website-design.png",
   },
   {
-    title: "UI/UX Design",
-    description: "Create delightful user experiences with our UI/UX services.",
+    title: "Admin Dashboard",
+    description: "We build custom admin panels that make it easy to manage users, content, analytics, and operations—all in one secure and intuitive interface.",
     bgColor: "#FFF0E1",
-    icon: "/images/services/ui-ux-design.jpg",
+    icon: "/images/services/admin-dashboard.png",
   },
   {
-    title: "Custom Web Apps",
-    description: "Advanced web applications designed to scale and perform.",
+    title: "SEO Optimization",
+    description: "Boost your website’s visibility with on-page SEO, technical improvements, and keyword strategies that help you rank higher on Google and drive organic traffic.",
     bgColor: "#F1E4FF",
-    icon: "/images/services/customise-web-apps.jpg",
+    icon: "/images/services/seo-optimization.png",
   },
   {
-    title: "Social Media Marketing",
-    description: "Advanced web applications designed to scale and perform.",
-    bgColor: "#F1E4FF",
-    icon: "/images/services/social-media-marketing.jpg",
+    title: "Custom Website Development",
+    description: "Get a fully custom-built website designed from the ground up to meet your specific business requirements, functionality, and user journey.",
+    bgColor: "#E2F6F1",
+    icon: "/images/services/custom-web-dev.png",
   },
+   {
+    title: "Website Maintenance",
+    description: "Keep your site secure and up-to-date with regular backups, bug fixes, performance checks, and content updates—handled by our expert team.",
+    bgColor: "#FFF6E5",
+    icon: "/images/services/web-maintainence.png",
+  },
+   {
+    title: "Website Revamp",
+    description: "Transform your outdated website with a complete redesign focused on modern aesthetics, faster performance, and improved user engagement.",
+    bgColor: "#FDEBFF",
+    icon: "/images/services/web-revamp.png",
+  },
+
 ];
 
 // faq data 
@@ -350,14 +363,14 @@ export const footerSections: FooterLinkSection[] = [
   {
     title: "Services",
     links: [
-      { label: "💻 Website Development", href: "services" },
-      { label: "🎨 Website Design", href: "services" },
-      { label: "📊 Admin Dashboard", href: "services" },
-      { label: "📈 SEO Optimization", href: "services" },
-      { label: "🛒 E-Commerce Solution", href: "services" },
-      { label: "🛠️ Custom Website Development", href: "services" },
-      { label: "🔧 Website Maintenance", href: "services" },
-      { label: "♻️ Website Revamp", href: "services" },
+      { label: "Website Development", href: "services" },
+      { label: "Website Design", href: "services" },
+      { label: "Admin Dashboard", href: "services" },
+      { label: "SEO Optimization", href: "services" },
+      { label: "E-Commerce Solution", href: "services" },
+      { label: "Custom Website Development", href: "services" },
+      { label: "Website Maintenance", href: "services" },
+      { label: "Website Revamp", href: "services" },
     ]
     ,
   },
@@ -380,7 +393,7 @@ export const contactInfo: FooterContactInfo[] = [
 export const ctaData: CTAData = {
   heading: "have an amazing project in mind?",
   subText:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corrupti?",
+    "Let’s turn your idea into a polished, high-impact product built the right way from day one.",
   buttonText: "contact us",
   backgroundImage: "/images/get-started/blue-bg.jpg",
 };
@@ -390,7 +403,7 @@ export const headerContent: HeaderContent = {
   title: "We Turn Ideas Into Digital Products That",
   highlight: "Perform",
   description:
-    "With our cutting-edge UI/UX, unique web apps, high-converting e-commerce sites, and astute SEO, we help brands stand out. We ensure that your online presence truly functions, from design to deployment and even social media.",
+    "We craft custom websites, dashboards, and e-commerce platforms with clean design, smart development, and built-in SEO to help your business grow across devices, attract more users, boost performance, and stay ahead of the competition.",
   primaryButton: "view our services",
   showContact: true,
   imageUrl: "/images/header/home-header.jpg",

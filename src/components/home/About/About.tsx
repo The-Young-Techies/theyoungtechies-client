@@ -1,6 +1,7 @@
 import { aboutContent } from "../../../utils/data";
 
 export default function AboutUs() {
+    const parts = aboutContent.title.split("brands");
     return (
         <section id="about" className=" px-6 sm:px-10 md:px-14 lg:px-16 mb-20 flex flex-col justify-center items-center md:justify-start md:items-start gap-10">
             {/* Top Section */}
@@ -8,8 +9,10 @@ export default function AboutUs() {
                 <div className="flex flex-col md:flex-row justify-start md:justify-between items-center gap-3 md:gap-10">
                     <div className="flex flex-col justify-center items-center text-center md:justify-start md:items-start md:text-start">
                         <p className="text-sm uppercase text-gray-500 font-bold mb-1">about us</p>
-                        <h2 className="text-h6 md:text-h5 xl:text-h4 font-bold capitalize">
-                            {aboutContent.title}
+                        <h2 className="text-h6 md:text-h5 xl:text-h4 font-bold capitalize" >
+                            {parts[0]}
+                            <span className="text-blue-600">brands</span>
+                            {parts[1]}
                         </h2>
                     </div>
                     <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-center md:text-start text-gray-700">

@@ -14,7 +14,7 @@ export default function Counter() {
       aria-label="Proven Success Statistics"
     >
       <div className="absolute inset-0 bg-black/80 z-0"></div>
-      <div className="relative z-20 w-full flex flex-col items-start justify-center mx-auto">
+      <div className="relative z-20 w-full flex flex-col items-center justify-center md:items-start text-center md:text-start mx-auto">
         <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
           Proven Success
         </h1>
@@ -28,7 +28,7 @@ export default function Counter() {
               key={i}
               className="
                 bg-white/10 backdrop-blur-md border border-white/10 shadow
-                rounded-2xl px-6 py-7 flex flex-col items-start
+                rounded-2xl px-6 py-7 flex flex-col items-center md:items-start
                 w-full min-w-[0]
                 transition-transform hover:scale-[1.025] duration-200
               "
