@@ -38,8 +38,8 @@ export default function Counter() {
                 <CountUp end={stat.value} duration={2} />
                 <span className="ml-1">{stat.suffix}</span>
               </div>
-              <div className="text-base text-white mt-1 font-semibold">{stat.label}</div>
-              <div className="text-xs sm:text-sm text-white/70 mt-2">{stat.description}</div>
+              <div className="text-lg text-white mt-1 font-semibold">{stat.label}</div>
+              <div className="text-sm sm:text-base text-white/70 mt-2">{stat.description}</div>
             </div>
           ))}
         </div>
