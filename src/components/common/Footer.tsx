@@ -47,7 +47,7 @@ export default function Footer() {
               {section.links.map((link) => (
                 <ScrollLink key={link.label}
                   to={link.href} smooth={true} duration={500}>
-                  <span className="hover:text-blue-400 cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
+                  <span className="hover:text-blue-200 cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
                     {link.label}
                   </span>
                 </ScrollLink>

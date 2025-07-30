@@ -3,14 +3,15 @@ import { Menu, X, Mail, Phone } from 'lucide-react';
 import InfoNav from './Info';
 import { navData, socialLinks } from '@/utils/data';
 import { Link as ScrollLink } from 'react-scroll';
+import PrimaryButton from "@/lib/PrimaryButton";
 
 // --- PRIMARY BUTTON COMPONENT ---
 // A simple, reusable button component.
-const PrimaryButton: React.FC<{ label: string; className?: string; onClick?: () => void }> = ({ label, className, onClick }) => (
-    <button onClick={onClick} className={`px-6 py-2 rounded-lg bg-[#3468E9] text-white font-semibold transition-all duration-300 hover:drop-shadow-[0_0_5px_#3468E9] ${className}`}>
-        {label}
-    </button>
-);
+// const PrimaryButton: React.FC<{ label: string; className?: string; onClick?: () => void }> = ({ label, className, onClick }) => (
+//     <button onClick={onClick} className={`px-6 py-2 rounded-lg bg-[#3468E9] text-white font-semibold transition-all duration-300 hover:drop-shadow-[0_0_5px_#3468E9] ${className}`}>
+//         {label}
+//     </button>
+// );
 
 
 // --- MOBILE MENU COMPONENT ---

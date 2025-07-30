@@ -15,10 +15,10 @@ export default function Counter() {
     >
       <div className="absolute inset-0 bg-black/80 z-0"></div>
       <div className="relative z-20 w-full flex flex-col items-center justify-center md:items-start text-center md:text-start mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+        <h2 className="text-h6 md:text-h5 xl:text-h3 font-bold text-white mb-2 leading-tight">
           Proven Success
-        </h1>
-        <p className="text-white/80 text-base sm:text-lg mb-10 max-w-2xl">
+        </h2>
+        <p className="text-white/80 text-body-small xl:text-h6 xl:text-para md:text-body mb-10 max-w-2xl">
           Our agency consistently delivers innovative, high-quality web solutions that exceed client expectations and drive real results.
         </p>
 

@@ -15,10 +15,10 @@ export default function GetStarted() {
       }}
     >
       <span className="flex flex-col justify-center items-center md:justify-start md:items-start gap-2 ">
-        <h2 className="text-h6 text-white capitalize font-bold">
+        <h2 className="text-h6 md:text-h5 xl:text-h4 leading-tight text-white capitalize font-bold">
           {ctaData.heading}
         </h2>
-        <p className="text-body-small text-gray-200 md:w-sm lg:w-full">{ctaData.subText}</p>
+        <p className="text-body-small lg:text-body text-gray-200 md:w-sm lg:w-full">{ctaData.subText}</p>
       </span>
        <ScrollLink to="contact" smooth={true} duration={1*150}>
         <button className="text-black bg-amber-200 py-2 px-7 rounded-lg text-lg capitalize font-bold">

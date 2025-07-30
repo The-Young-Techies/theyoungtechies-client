@@ -2,6 +2,7 @@
 import React from 'react';
 import { projectsData } from '@/utils/data';
 import ProjectCard from './ProjectCard';
+import PrimaryButton from '@/lib/PrimaryButton';
 
 const Project = () => {
   const [visibleProjects, setVisibleProjects] = React.useState<number>(3);
@@ -12,10 +13,13 @@ const Project = () => {
     <section id="projects" className=" bg-white text-black mb-20 px-6 sm:px-10 md:px-14 lg:px-16">
       <div className="container mx-auto flex justify-center gap-4 md:gap-10 items-center flex-col">
         <div className="text-center">
-          <h2 className="text-5xl max-sm:text-4xl font-bold">
+          <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2 text-center">
+            our projects
+          </p>
+          <h2 className="text-h6 md:text-h5 xl:text-h3 font-bold leading-tight">
             Featured <span className="text-[#3468E9]">Projects</span>
           </h2>
-          <p className="mt-4 text-lg max-sm:text-[17px] text-[#222222ee] max-w-3xl mx-auto">
+          <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 mt-4 max-w-3xl mx-auto">
             Explore a selection of our recent projects that highlight our commitment to quality, creativity, and delivering results that matter.
           </p>
         </div>
@@ -27,12 +31,7 @@ const Project = () => {
         </div>
 
         {hasMoreProjects && (
-          <button
-            onClick={showAllProjects}
-            className="inline-flex px-10 py-4 mt-12 rounded-xl bg-[#3468E9] text-white hover:drop-shadow-[0_0_5px_#3468E9] transition-all duration-500 items-center"
-          >
-            View All Projects
-          </button>
+        <PrimaryButton label='view all services' onClick={showAllProjects} className='mt-6' />
         )}
       </div>
     </section>

@@ -1,3 +1,4 @@
+import PrimaryButton from "@/lib/PrimaryButton";
 import { contactMethods, formFields, reasons, selectOptions } from "@/utils/data";
 import { CheckCircle2 } from "lucide-react";
 
@@ -11,11 +12,11 @@ export default function ContactUs() {
         {/* LEFT: Contact info & value prop */}
         <div className="w-full md:w-[45%] flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <span className="text-blue-500 font-semibold text-xs uppercase tracking-widest">Contact Us</span>
-            <h2 className="text-4xl/[1.2] md:text-5xl font-extrabold text-gray-900">
-              Let’s <span className="text-blue-600 underline underline-offset-8 decoration-2">Talk</span>
+            <span className="text-blue-500 text-xs uppercase tracking-widest font-bold">Contact Us</span>
+            <h2 className="text-h6 md:text-h5 xl:text-h3 leading-tight font-bold text-gray-900">
+              Let's <span className="text-blue-600 underline underline-offset-8 decoration-2">Talk</span>
             </h2>
-            <p className="text-lg text-slate-600 mt-2">
+            <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 mt-2">
               Have a project in mind? Fill out the form and our team will respond within 24 hours.
             </p>
           </div>
@@ -88,12 +89,7 @@ export default function ContactUs() {
               className="w-full bg-slate-50 border border-blue-100 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-200 transition resize-none min-h-[120px]"
               required
             />
-            <button
-              type="submit"
-              className="cursor-pointer w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-extrabold text-lg py-3 rounded-xl shadow-blue-100 shadow-lg hover:from-blue-700 hover:to-blue-500 transition duration-150 ease-in-out"
-            >
-              Send Message
-            </button>
+        <PrimaryButton label="send message" type="submit" className="w-full" />
           </form>
         </div>
       </div>

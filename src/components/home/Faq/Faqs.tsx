@@ -19,11 +19,14 @@ export default function FAQ() {
   return (
     <section className="w-full mb-20 px-6 sm:px-10 md:px-14 lg:px-16">
       <div className="max-w-full mx-auto">
-        <h2 className="text-h6 md:text-h5 lg:text-h4 font-bold text-center mb-4 capitalize">
+           <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2 text-center">
+                          faqs
+                        </p>
+        <h2 className="text-h6 md:text-h5 xl:text-h3 leading-tight font-bold text-center mb-4 capitalize">
           frequently <span className="text-blue-500">asked</span> questions
         </h2>
 
-        <p className="text-center text-gray-800 text-body-small md:text-body mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 mb-12 max-w-3xl mx-auto">
           Here are answers to some of the most common questions we get.
         </p>
 

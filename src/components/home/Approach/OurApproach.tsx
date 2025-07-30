@@ -8,14 +8,19 @@ export default function OurApproach() {
   return (
     <section className="w-full px-6 sm:px-10 md:px-14 lg:px-16  py-20 bg-blue-50 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-28">
       <div className="flex flex-col justify-start items-center gap-4 md:gap-6 text-center md:text-start md:items-start">
-        <h1 className="text-h6 md:text-h5 xl:text-h4 text-gray-900 font-bold ">
-          Our Simple & Basic <span className="text-blue-600">Approach</span>
-        </h1>
-        <p className="text-body-small md:text-body xl:text-para text-gray-600 w-full max-w-3xl">
+        <span className="flex flex-col justify-start items-center text-center md:text-start md:items-start">
+          <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2">
+            our approach
+          </p>
+          <h2 className="text-h6 md:text-h5 xl:text-h3  text-gray-900 font-bold leading-tight">
+            Our Simple & Basic <span className="text-[#3468E9]">Approach</span>
+          </h2>
+        </span>
+        <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600  w-full max-w-3xl">
           We follow a collaborative, client-centered approach to ensure that every project meets and exceeds expectations.
         </p>
-        <ScrollLink to="contact" smooth={true} duration={5*150}>
-          <PrimaryButton label="get in touch" className="cursor-pointer"/>
+        <ScrollLink to="contact" smooth={true} duration={5 * 150}>
+          <PrimaryButton label="get in touch" className="cursor-pointer" />
         </ScrollLink>
       </div>
 

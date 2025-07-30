@@ -27,7 +27,7 @@ export default function Header() {
     >
       {/* Text Section */}
       <div className="flex flex-col justify-start items-start gap-4 sm:gap-3 xl:gap-7 text-start z-10 md:w-xl xl:w-3xl">
-        <h1 className="text-black text-h5 min-[550px]:text-h5 sm:text-h5 md:text-h4 lg:text-h3 xl:text-h1 font-bold leading-8 sm:leading-10 md:leading-11 xl:leading-14">
+        <h1 className="text-black text-h5 min-[550px]:text-h5 sm:text-h5 md:text-h4 lg:text-h3 xl:text-h1 font-bold leading-tight">
           {title} <span className="text-blue-500">{highlight}</span>
         </h1>
         <p className="text-gray-700 text-body-small md:text-body lg:text-para">

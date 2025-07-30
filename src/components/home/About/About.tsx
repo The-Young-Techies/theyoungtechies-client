@@ -8,14 +8,16 @@ export default function AboutUs() {
             <div className="flex flex-col md:flex-row justify-center items-center">
                 <div className="flex flex-col md:flex-row justify-start md:justify-between items-center gap-3 md:gap-10">
                     <div className="flex flex-col justify-center items-center text-center md:justify-start md:items-start md:text-start">
-                        <p className="text-sm uppercase text-gray-500 font-bold mb-1">about us</p>
-                        <h2 className="text-h6 md:text-h5 xl:text-h4 font-bold capitalize" >
+                        <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2 text-center">
+                            About Us
+                        </p>
+                        <h2 className="text-h6 md:text-h5 xl:text-h3 font-bold capitalize leading-tight" >
                             {parts[0]}
-                            <span className="text-blue-600">brands</span>
+                            <span className="text-[#3468E9]">brands</span>
                             {parts[1]}
                         </h2>
                     </div>
-                    <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-center md:text-start text-gray-700">
+                    <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 text-center md:text-start ">
                         {aboutContent.description}
                     </p>
                 </div>
@@ -25,10 +27,10 @@ export default function AboutUs() {
             <div className="md:h-[400px] flex flex-col md:flex-row justify-center gap-6 w-full">
                 {/* First section with full height */}
                 <div
-                    className={`h-full flex flex-col justify-end rounded-xl gap-2 ${aboutContent.sections[0].textColor} ${aboutContent.sections[0].bg} bg-no-repeat bg-left bg-cover p-4`}
+                    className={`h-full flex flex-col justify-end rounded-xl gap-1 lg:gap-2 leading-tight w-full ${aboutContent.sections[0].textColor} ${aboutContent.sections[0].bg} bg-no-repeat bg-left bg-cover p-4`}
                 >
-                    <h4 className="text-2xl font-bold capitalize">{aboutContent.sections[0].title}</h4>
-                    <p>{aboutContent.sections[0].text}</p>
+                    <h4 className="text-para sm:text-h6 font-bold capitalize">{aboutContent.sections[0].title}</h4>
+                    <p className="text-body-small md:text-body">{aboutContent.sections[0].text}</p>
                 </div>
 
                 {/* Next two sections stacked vertically */}
@@ -36,10 +38,10 @@ export default function AboutUs() {
                     {aboutContent.sections.slice(1).map((section) => (
                         <div
                             key={section.id}
-                            className={`h-[50%] ${section.bg} ${section.textColor} p-4 flex flex-col justify-end gap-2 rounded-xl`}
+                            className={`h-[50%] ${section.bg} ${section.textColor} p-4 flex flex-col justify-end gap-1 lg:gap-2 rounded-xl leading-tight`}
                         >
-                            <h4 className="text-2xl font-bold capitalize">{section.title}</h4>
-                            <p>{section.text}</p>
+                            <h4 className="text-para sm:text-h6 font-bold capitalize">{section.title}</h4>
+                            <p className="text-body-small md:text-body text-gray-700">{section.text}</p>
                         </div>
                     ))}
                 </div>
