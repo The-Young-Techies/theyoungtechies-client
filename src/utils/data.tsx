@@ -1,3 +1,4 @@
+import { Mail, Phone } from "lucide-react";
 import type { ApproachStep, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember } from "./interface";
 
 // nav items 
@@ -378,12 +379,12 @@ export const footerSections: FooterLinkSection[] = [
 
 export const contactInfo: FooterContactInfo[] = [
   {
-    icon: <span className="text-lg px-2">📧</span>,
+    icon: <Mail className="px-2" size={150}/>,
     value: "contact@theyoungtechies.com",
     href: "mailto:contact@theyoungtechies.com",
   },
   {
-    icon: <span className="text-lg">📞</span>,
+    icon: <Phone  className="px-2" size={150}/>,
     value: "+91 93102 56281",
     href: "tel:+919310256281",
   },

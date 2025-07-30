@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-blue-900 py-14 flex justify-center items-center flex-col px-6 sm:px-10 lg:px-16 select-none">
+    <footer className="w-full bg-blue-900 py-5 flex justify-center items-center flex-col px-6 sm:px-10 lg:px-16 select-none">
       <div className="w-full grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
         {/* Logo & Description */}
@@ -86,7 +86,7 @@ export default function Footer() {
         </section>
       </div>
 
-      <div className="border-t border-gray-400 w-full mt-12 pt-6 text-center text-xs text-blue-300">
+      <div className="border-t border-gray-400 w-full mt-12 pt-6 text-center text-base text-blue-300">
         &copy; {new Date().getFullYear()} The Young Techies. All rights reserved.
       </div>
     </footer>
