@@ -77,7 +77,6 @@ const Navbar: React.FC = () => {
 
     return (
         <header className="w-full sticky top-0 z-40">
-            <InfoNav />
             <nav className="w-full bg-white z-30 shadow-md flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-16 h-[64px]">
                 <a href="/" className="flex items-center">
                     <img src="/images/logos/youngtech-logos.png" alt="The Young Techies Logo" className="h-12 object-contain" />

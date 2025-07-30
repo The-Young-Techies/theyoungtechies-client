@@ -82,28 +82,28 @@ export const serviceCarouselItems = [
 // counter 
 export const eventStats: IEventStats[] = [
   {
-    icon: "🚀",
+    icon: "/images/success/projects-comp.png",
     label: 'Projects Completed',
     value: 10,
     suffix: '+',
     description: 'Successful launches',
   },
   {
-    icon: "⏳",
+    icon: "/images/success/hourglass-icon.png",
     label: 'Average Delivery Time',
     value: 1,
     suffix: 'w',
     description: 'Weeks per project',
   },
   {
-    icon: "🤝",
+    icon: "/images/success/clients-icon.png",
     label: 'Clients Served',
     value: 6,
     suffix: '+',
     description: 'Satisfied clients',
   },
   {
-    icon: "🌐",
+    icon: "/images/success/technology-icon.png",
     label: 'Technologies Used',
     value: 20,
     suffix: '+',
@@ -378,7 +378,7 @@ export const footerSections: FooterLinkSection[] = [
 
 export const contactInfo: FooterContactInfo[] = [
   {
-    icon: <span className="text-lg">📧</span>,
+    icon: <span className="text-lg px-2">📧</span>,
     value: "contact@theyoungtechies.com",
     href: "mailto:contact@theyoungtechies.com",
   },

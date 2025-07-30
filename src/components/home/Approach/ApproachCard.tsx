@@ -11,7 +11,7 @@ const ApproachCard: React.FC<Props> = ({ step }) => {
   return (
     <div className="flex flex-col justify-start items-start gap-3 w-full">
       <span className="flex flex-col justify-start items-start gap-1">
-        <p className="text-gray-500 text-para-small md:text-body-small font-bold uppercase text-md">
+        <p className="text-gray-500 text-base font-bold uppercase text-md">
           {step.icon}
         </p>
         <h4 className="text-para md:text-h6 font-semibold leading-tight">{step.title}</h4>

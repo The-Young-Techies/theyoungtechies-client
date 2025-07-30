@@ -16,7 +16,7 @@ export default function Services() {
         {services.map((value, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center justify-between bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg hover:scale-[1.025] transition-all duration-200 p-6 min-h-[320px]"
+            className="group flex flex-col items-center justify-between bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg hover:scale-[1.025] transition-all duration-200 p-6 min-h-[290px]"
           >
             <div
               className="flex items-center justify-center h-20 w-20 rounded-xl mb-4 shadow ring-1 ring-blue-200"
@@ -36,12 +36,12 @@ export default function Services() {
               </h4>
               <p className="text-gray-600 text-base">{value.description}</p>
             </div>
-            <button className="mt-6 flex items-center font-semibold text-blue-700 hover:text-blue-900 group transition-colors">
+            {/* <button className="mt-6 flex items-center font-semibold text-blue-700 hover:text-blue-900 group transition-colors">
               <span>Learn more</span>
               <span className="ml-2 transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 &rarr;
               </span>
-            </button>
+            </button> */}
           </div>
         ))}
       </div>

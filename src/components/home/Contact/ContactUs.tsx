@@ -11,16 +11,15 @@ export default function ContactUs() {
       <div className="w-full  mx-auto flex flex-col md:flex-row gap-10 md:gap-16 items-center">
         {/* LEFT: Contact info & value prop */}
         <div className="w-full md:w-[45%] flex flex-col gap-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
             <span className="text-blue-500 text-xs uppercase tracking-widest font-bold">Contact Us</span>
             <h2 className="text-h6 md:text-h5 xl:text-h3 leading-tight font-bold text-gray-900">
-              Let's <span className="text-blue-600 underline underline-offset-8 decoration-2">Talk</span>
+              We'd Love to <span className="text-blue-600">Hear</span> From You
             </h2>
-            <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 mt-2">
+            </div>
+            <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600">
               Have a project in mind? Fill out the form and our team will respond within 24 hours.
             </p>
-          </div>
-
           <div className="flex flex-col gap-4">
             {contactMethods.map(({ icon, title, detail }, i) => (
               <div key={i} className="flex gap-4 items-center">
@@ -33,18 +32,6 @@ export default function ContactUs() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="bg-white/70 shadow-md rounded-xl p-5 mt-2 border border-blue-100 flex flex-col gap-2 backdrop-blur">
-            <h4 className="text-lg font-bold text-gray-900 mb-1">Why choose us?</h4>
-            <ul className="space-y-2">
-              {reasons.map((reason, i) => (
-                <li key={i} className="flex items-center gap-2 text-slate-700">
-                  <CheckCircle2 className="text-blue-500" size={18} />
-                  <span>{reason}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 

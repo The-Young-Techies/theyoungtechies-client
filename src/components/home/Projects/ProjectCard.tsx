@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <h3 className="text-lg font-semibold text-zinc-800">
             {project.title}
           </h3>
-          <p className="text-sm text-zinc-600 line-clamp-3">
+          <p className="text-base text-zinc-600 line-clamp-3">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2">

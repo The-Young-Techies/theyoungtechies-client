@@ -22,7 +22,7 @@ export default function Footer() {
             <span className="sr-only">The Young Techies</span>
           </Link>
 
-          <p className="text-white text-sm leading-relaxed max-w-xs">
+          <p className="text-white text-base leading-relaxed max-w-xs">
             High-performance digital experiences. Stunning websites. Seamless UX.
           </p>
 
@@ -43,7 +43,7 @@ export default function Footer() {
             >
               {section.title}
             </h3>
-            <nav className="flex flex-col space-y-3 text-white text-sm" aria-label={section.title}>
+            <nav className="flex flex-col space-y-3 text-white text-base" aria-label={section.title}>
               {section.links.map((link) => (
                 <ScrollLink key={link.label}
                   to={link.href} smooth={true} duration={500}>
@@ -66,7 +66,7 @@ export default function Footer() {
           </h3>
           <address className="not-italic">
             {contactInfo.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 mb-4 text-white text-sm">
+              <div key={idx} className="flex justify-start items-center text-start gap-3 mb-4 text-white text-sm">
                 <span className="flex items-center justify-center w-9 h-9 bg-blue-700 rounded-full">
                   {item.icon}
                 </span>
@@ -75,10 +75,10 @@ export default function Footer() {
                     href={item.href}
                     className="hover:text-blue-400 transition-colors break-words focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
                   >
-                    {item.value}
+                   <p className="text-base">{item.value}</p>
                   </a>
                 ) : (
-                  <p className="break-words">{item.value}</p>
+                  <p className="break-words ">{item.value}</p>
                 )}
               </div>
             ))}
@@ -86,7 +86,7 @@ export default function Footer() {
         </section>
       </div>
 
-      <div className="border-t border-blue-700 w-full max-w-7xl mt-12 pt-6 text-center text-xs text-blue-300">
+      <div className="border-t border-gray-400 w-full mt-12 pt-6 text-center text-xs text-blue-300">
         &copy; {new Date().getFullYear()} The Young Techies. All rights reserved.
       </div>
     </footer>

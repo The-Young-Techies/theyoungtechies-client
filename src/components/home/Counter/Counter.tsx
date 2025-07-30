@@ -30,10 +30,10 @@ export default function Counter() {
                 bg-white/10 backdrop-blur-md border border-white/10 shadow
                 rounded-2xl px-6 py-7 flex flex-col items-center md:items-start
                 w-full min-w-[0]
-                transition-transform hover:scale-[1.025] duration-200
+                transition-transform hover:scale-[1.025] duration-200 gap-1
               "
             >
-              <span className="text-4xl sm:text-5xl mb-2 select-none">{stat.icon}</span>
+              <img src={stat.icon} alt="" className="w-14"/>
               <div className="font-extrabold text-2xl sm:text-3xl text-white flex items-center">
                 <CountUp end={stat.value} duration={2} />
                 <span className="ml-1">{stat.suffix}</span>
