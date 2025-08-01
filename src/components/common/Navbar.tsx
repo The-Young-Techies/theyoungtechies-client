@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Mail, Phone } from 'lucide-react';
-import InfoNav from './Info';
 import { navData, socialLinks } from '@/utils/data';
 import { Link as ScrollLink } from 'react-scroll';
 import PrimaryButton from "@/lib/PrimaryButton";
+import { Link } from '@tanstack/react-router';
 
 // --- PRIMARY BUTTON COMPONENT ---
 // A simple, reusable button component.
@@ -38,7 +38,7 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
                     </ScrollLink>
                 ))}
                 <div className="mt-8">
-                    <ScrollLink to="contact" smooth={true} duration={8*150} >
+                    <ScrollLink to="contact" smooth={true} duration={8 * 150} >
                         <PrimaryButton label="Contact Us" className="cursor-pointer" onClick={onClose} />
                     </ScrollLink>
                 </div>
@@ -83,17 +83,34 @@ const Navbar: React.FC = () => {
                 </a>
 
                 <div className="hidden sm:flex items-center space-x-10">
-                    {navData.map(({ anker, href }) => (
-                        <ScrollLink to={href} key={anker} smooth={true} duration={500} className="cursor-pointer">
-                            <span className="relative text-lg font-semibold font-sans text-gray-900 hover:text-blue-600 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">
-                                {anker}
-                            </span>
-                        </ScrollLink>
-                    ))}
+                    {navData.map(({ anker, href }) =>
+                        href.startsWith('/') ? (
+                            // Page route link (like /blog)
+                            <Link key={anker} to={href} className="cursor-pointer">
+                                <span className="relative text-lg font-semibold font-sans text-gray-900 hover:text-blue-600 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">
+                                    {anker}
+                                </span>
+                            </Link>
+                        ) : (
+                            // Scroll to section (like 'about', 'services')
+                            <ScrollLink
+                                key={anker}
+                                to={href}
+                                smooth={true}
+                                duration={500}
+                                offset={-80} // adjust for navbar height if needed
+                                className="cursor-pointer"
+                            >
+                                <span className="relative text-lg font-semibold font-sans text-gray-900 hover:text-blue-600 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">
+                                    {anker}
+                                </span>
+                            </ScrollLink>
+                        )
+                    )}
                 </div>
 
                 <div className="hidden md:flex">
-                    <ScrollLink to="contact" smooth={true} duration={8*150}>
+                    <ScrollLink to="contact" smooth={true} duration={8 * 150}>
                         <PrimaryButton label="Contact Us" className="cursor-pointer" />
                     </ScrollLink>
                 </div>

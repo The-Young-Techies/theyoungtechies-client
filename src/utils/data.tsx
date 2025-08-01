@@ -6,6 +6,7 @@ export const navData: NavLink[] = [
   { anker: "About", href: "about" },
   { anker: "Services", href: "services" },
   { anker: "Projects", href: "projects" },
+  { anker: "Blogs", href: "/blogs" },
 ];
 
 // social links
