@@ -57,7 +57,7 @@ function BlogDetailPage() {
             <header className={`w-full h-[60vh] relative  flex justify-center items-center m-auto text-center bg-[url('/images/blogs/web-agency.jpg')] bg-no-repeat bg-left bg-cover`}>
                 <div className="absolute h-[100%] inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
                 <div className='relative z-10'>
-                        <h1 className='text-white text-h2 font-bold leading-tight w-[70%] m-auto'>{blog.title}</h1>
+                    <h1 className='text-white text-h2 font-bold leading-tight w-[70%] m-auto'>{blog.title}</h1>
                 </div>
             </header>
             <div className='px-10 my-10 flex justify-between gap-10 '>

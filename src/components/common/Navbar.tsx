@@ -1,18 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Mail, Phone } from 'lucide-react';
 import { navData, socialLinks } from '@/utils/data';
-import { Link as ScrollLink } from 'react-scroll';
 import PrimaryButton from "@/lib/PrimaryButton";
 import { Link } from '@tanstack/react-router';
-
-// --- PRIMARY BUTTON COMPONENT ---
-// A simple, reusable button component.
-// const PrimaryButton: React.FC<{ label: string; className?: string; onClick?: () => void }> = ({ label, className, onClick }) => (
-//     <button onClick={onClick} className={`px-6 py-2 rounded-lg bg-[#3468E9] text-white font-semibold transition-all duration-300 hover:drop-shadow-[0_0_5px_#3468E9] ${className}`}>
-//         {label}
-//     </button>
-// );
-
 
 // --- MOBILE MENU COMPONENT ---
 // This overlay will appear on mobile screens when the menu is toggled.
@@ -33,14 +23,14 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
             </div>
             <div className="flex flex-col justify-center items-center h-full -mt-20 text-center">
                 {navData.map(({ anker, href }) => (
-                    <ScrollLink to={href} key={anker} smooth={true} duration={500} className="cursor-pointer">
+                    <Link to={href} key={anker} className="cursor-pointer">
                         <span onClick={onClose} className="block py-4 text-3xl font-semibold hover:text-blue-400 transition-colors">{anker}</span>
-                    </ScrollLink>
+                    </Link>
                 ))}
                 <div className="mt-8">
-                    <ScrollLink to="contact" smooth={true} duration={8 * 150} >
+                    <Link to={'/contact'}>
                         <PrimaryButton label="Contact Us" className="cursor-pointer" onClick={onClose} />
-                    </ScrollLink>
+                    </Link>
                 </div>
                 <div className="mt-12 flex flex-col items-center gap-4 text-lg">
                     <a href="mailto:contact@theyoungtechies.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Mail size={20} /> contact@theyoungtechies.com</a>
@@ -93,26 +83,23 @@ const Navbar: React.FC = () => {
                             </Link>
                         ) : (
                             // Scroll to section (like 'about', 'services')
-                            <ScrollLink
+                            <Link
                                 key={anker}
                                 to={href}
-                                smooth={true}
-                                duration={500}
-                                offset={-80} // adjust for navbar height if needed
                                 className="cursor-pointer"
                             >
                                 <span className="relative text-lg font-semibold font-sans text-gray-900 hover:text-blue-600 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full">
                                     {anker}
                                 </span>
-                            </ScrollLink>
+                            </Link>
                         )
                     )}
                 </div>
 
                 <div className="hidden md:flex">
-                    <ScrollLink to="contact" smooth={true} duration={8 * 150}>
+                    <Link to="contact" >
                         <PrimaryButton label="Contact Us" className="cursor-pointer" />
-                    </ScrollLink>
+                    </Link>
                 </div>
 
                 <div className="flex sm:hidden items-center">

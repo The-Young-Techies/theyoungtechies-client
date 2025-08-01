@@ -3,9 +3,9 @@ import type { ApproachStep, ContactMethod, CTAData, FAQItem, FooterContactInfo, 
 
 // nav items 
 export const navData: NavLink[] = [
-  { anker: "About", href: "about" },
-  { anker: "Services", href: "services" },
-  { anker: "Projects", href: "projects" },
+  { anker: "About", href: "/about" },
+  { anker: "Services", href: "/services" },
+  { anker: "Projects", href: "/projects" },
   { anker: "Blogs", href: "/blogs" },
 ];
 
@@ -197,10 +197,10 @@ export const projectsData: Project[] = [
 // serviceData 
 export const services: Service[] = [
   {
+    icon: "/images/services/web-dev-icon.png",
     title: "Website Development",
     description: "We create responsive, high-performance websites tailored to your business goals using the latest web technologies and frameworks.",
     bgColor: "#EDE8FF",
-    icon: "/images/services/web-dev-icon.png",
   },
   {
     title: "E-Commerce Solutions",
