@@ -1,6 +1,5 @@
 import PrimaryButton from "@/lib/PrimaryButton";
-import { contactMethods, formFields, reasons, selectOptions } from "@/utils/data";
-import { CheckCircle2 } from "lucide-react";
+import { contactMethods, formFields, selectOptions } from "@/utils/data";
 
 // You might want to replace below with your UI Kit's Button/Field if available!
 

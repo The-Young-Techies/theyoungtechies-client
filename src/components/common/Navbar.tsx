@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Mail, Phone } from 'lucide-react';
-import InfoNav from './Info';
 import { navData, socialLinks } from '@/utils/data';
 import { Link as ScrollLink } from 'react-scroll';
 import PrimaryButton from "@/lib/PrimaryButton";
