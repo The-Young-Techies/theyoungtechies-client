@@ -3,6 +3,7 @@ import { Menu, X, Mail, Phone } from 'lucide-react';
 import { navData, socialLinks } from '@/utils/data';
 import PrimaryButton from "@/lib/PrimaryButton";
 import { Link } from '@tanstack/react-router';
+import { ScrollLink } from 'react-scroll';
 
 // --- MOBILE MENU COMPONENT ---
 // This overlay will appear on mobile screens when the menu is toggled.
@@ -97,9 +98,9 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="hidden md:flex">
-                    <Link to="contact" >
+                    <ScrollLink to="contact" >
                         <PrimaryButton label="Contact Us" className="cursor-pointer" />
-                    </Link>
+                    </ScrollLink>
                 </div>
 
                 <div className="flex sm:hidden items-center">

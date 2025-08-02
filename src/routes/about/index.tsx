@@ -1,3 +1,7 @@
+import AboutFaqs from '@/components/about/AboutFaqs'
+import AboutHeader from '@/components/about/AboutHeader'
+import AboutValues from '@/components/about/values'
+import WhyChooseUs from '@/components/about/WhyChoose'
 import { createFileRoute } from '@tanstack/react-router'
 import { Users, Target, Award, Lightbulb } from 'lucide-react'
 
@@ -5,19 +9,6 @@ export const Route = createFileRoute('/about/')({
   component: AboutPage,
 })
 
-// Hero/Intro Section
-function AboutHero() {
-  return (
-    <div className="text-center max-w-4xl mx-auto">
-      <h2 className="text-h6 md:text-h5 xl:text-h3 font-bold leading-tight">
-        About <span className="text-[#3468E9]">Us</span>
-      </h2>
-      <p className="text-gray-600 mt-4 text-lg">
-        Driven by innovation and a passion for helping businesses grow, our diverse team crafts digital solutions that empower organizations to lead in their industries.
-      </p>
-    </div>
-  )
-}
 
 // Core Values Section
 function CoreValues() {
@@ -44,14 +35,14 @@ function CoreValues() {
     },
   ]
   return (
-    <section className="w-full max-w-5xl mx-auto mt-12">
-      <h3 className="text-2xl font-bold text-center mb-8">Our Core Values</h3>
+    <section className="w-full px-20 py-20 flex flex-col gap-8 bg-blue-50 mb-20">
+      <h3 className="text-h6 md:text-h5 xl:text-h3 font-bold capitalize leading-tight text-center">The <span className='text-blue-500'>Beliefs</span> Behind Every Project</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {values.map((value, i) => (
           <div key={i} className="bg-white border rounded-2xl shadow-sm px-6 py-8 flex flex-col items-center text-center hover:shadow-lg transition">
             <div className="mb-4">{value.icon}</div>
-            <h4 className="font-semibold text-lg mb-2">{value.title}</h4>
-            <p className="text-gray-500 text-sm">{value.desc}</p>
+            <h4 className="font-semibold text-h6 mb-2">{value.title}</h4>
+            <p className="text-gray-500 text-body">{value.desc}</p>
           </div>
         ))}
       </div>
@@ -135,13 +126,16 @@ function AboutPage() {
   return (
     <section
       id="about"
-      className="bg-white text-black my-20 mt-10 px-6 sm:px-10 md:px-14 lg:px-16 flex flex-col items-center"
+      className="bg-white text-black flex flex-col items-center"
     >
       <div className="container mx-auto flex flex-col items-center">
-        <AboutHero />
+        <AboutHeader />
+        <AboutValues/>
         <CoreValues />
-        <TeamSpotlight />
-        <KeyNumbers />
+        <WhyChooseUs/>
+        <AboutFaqs/>
+        {/* <TeamSpotlight />
+        <KeyNumbers /> */}
       </div>
     </section>
   )

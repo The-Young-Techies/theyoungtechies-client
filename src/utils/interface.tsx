@@ -116,5 +116,22 @@ export interface HeaderContent {
   };
 }
 
+export interface Blog {
+    title: string
+    content: string
+    head1: string
+    description: string
+    description2: string[]
+    head2: string
+    head3: string
+    list: string[]
+    tags: string[]
+}
 
+export interface BlogList {
+  title: string;
+  slug: string;
+  summary: string;
+  image: string
+};
 

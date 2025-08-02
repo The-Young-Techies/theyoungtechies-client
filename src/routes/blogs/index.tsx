@@ -1,42 +1,8 @@
 // routes/blogs/index.tsx
+import { bloglistData } from '@/utils/data';
 import { createFileRoute } from '@tanstack/react-router';
 import { Search } from 'lucide-react';
 import React from 'react';
-
-type Blog = {
-  title: string;
-  slug: string;
-  summary: string;
-  image: string
-};
-
-const blogs: Blog[] = [
-  {
-    title: 'Best Web Development Services in Burari - The Young Techies',
-    slug: 'best-web-development-services-in-burari',
-    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
-    image: "/images/blogs/web-agency.jpg"
-  },
-  {
-    title: 'Best Web Development Services in Burari - The Young Techies',
-    slug: 'best-web-development-services-in-burari',
-    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
-    image: "/images/blogs/web-agency.jpg"
-  },
-  {
-    title: 'Best Web Development Services in Burari - The Young Techies',
-    slug: 'best-web-development-services-in-burari',
-    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
-    image: "/images/blogs/web-agency.jpg"
-  },
-  {
-    title: 'Best Web Development Services in Burari - The Young Techies',
-    slug: 'best-web-development-services-in-burari',
-    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
-    image: "/images/blogs/web-agency.jpg"
-  },
-  // Add more blogs as needed
-];
 
 export const Route = createFileRoute('/blogs/')({
   component: BlogListPage,
@@ -48,7 +14,7 @@ function BlogListPage() {
 
   const showAllBlogs = () => setVisibleBlogs(filteredBlogs.length);
 
-  const filteredBlogs = blogs.filter(
+  const filteredBlogs = bloglistData.filter(
     (blog) =>
       blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       blog.summary.toLowerCase().includes(searchTerm.toLowerCase())

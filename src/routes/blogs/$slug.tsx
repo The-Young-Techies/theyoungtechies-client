@@ -1,43 +1,8 @@
 // routes/blogs/$slug.tsx
-import { services, socialLinks } from '@/utils/data'
+import { blogData, services, socialLinks } from '@/utils/data'
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { CheckCircleIcon, Quote } from 'lucide-react'
 
-type Blog = {
-    title: string
-    content: string
-    head1: string
-    description: string
-    description2: string[]
-    head2: string
-    head3: string
-    list: string[]
-    tags: string[]
-}
-
-const blogData: Record<string, Blog> = {
-    'best-web-development-services-in-burari': {
-        title: 'Best Web Development Services in Burari - The Young Techies',
-        content:
-            "When it comes to building a strong digital presence, your website is everything. It's your first impression, your 24/7 salesperson, and the backbone of your brand online. If you're a business or startup in Burari looking for professional, reliable, and modern web development, The Young Techies is the name to trust.",
-        head1: "Who We Are",
-        description: "At The Young Techies, we’re not just another agency. We’re a team of passionate developers and designers based right here in Burari, helping local businesses go digital the right way. We combine technical skill with creative thinking to build websites that actually work—fast, responsive, and optimized for real-world results.",
-        head2: "What We Offer",
-        list: [
-            "We design visually compelling websites that align with your brand identity and business goals, ensuring a strong first impression.",
-            "From intuitive user interfaces to robust backend systems, we deliver complete development solutions tailored to your requirements.",
-            "We build secure, scalable online stores with integrated payment systems, product management, and user-friendly navigation.",
-            "Every website is optimized for seamless performance on desktops, tablets, and smartphones to ensure a consistent user experience.",
-            "We fine-tune your website for speed and efficiency, reducing load times and improving overall functionality.",
-
-        ],
-        head3: "Who We Work With",
-        description2: [
-            "Whether you’re a small business, a growing startup, or even a solo creator—if you’ve got a vision, we can build it.", "We’ve already worked with local institutes, retail stores, fitness brands, and freelancers in Burari, Sant Nagar, and nearby areas."
-        ],
-        tags: ['websites', 'web development', 'frontend', 'backend']
-    },
-}
 
 export const Route = createFileRoute('/blogs/$slug')({
     component: BlogDetailPage,

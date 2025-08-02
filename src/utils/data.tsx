@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import type { ApproachStep, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember } from "./interface";
+import type { ApproachStep, Blog, BlogList, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember } from "./interface";
 
 // nav items 
 export const navData: NavLink[] = [
@@ -271,6 +271,38 @@ export const faqs: FAQItem[] = [
   },
 ];
 
+export const aboutFAQs = [
+  {
+    question: "What kind of businesses do you work with?",
+    answer: "We work with startups, small businesses, local brands, and growing companies across various industries. Whether you're launching your first website or need a redesign, we adapt to fit your goals and scale."
+  },
+  {
+    question: "What services do you offer?",
+    answer: "We specialize in custom website development, UI/UX design, e-commerce solutions, portfolio sites, and CMS platforms like WordPress and Shopify. We also offer maintenance and performance optimization services."
+  },
+  {
+    question: "How long does it take to complete a project?",
+    answer: "On average, a standard website takes about 1 to 2 weeks depending on its size and complexity. For larger or more custom builds, we’ll give you a detailed timeline before starting."
+  },
+  {
+    question: "What makes Young Techies different from other agencies?",
+    answer: "We're a small, focused team that prioritizes quality, clarity, and speed. Every project is custom-built—no templates, no shortcuts. We care about clean code, smart design, and long-term client relationships."
+  },
+  {
+    question: "Will I be able to update my website on my own?",
+    answer: "Absolutely. If your site is built with a CMS like WordPress or Shopify, we’ll show you how to manage content easily. For custom sites, we can add a simple dashboard or offer ongoing support."
+  },
+  {
+    question: "What is your pricing model?",
+    answer: "Our pricing depends on the project’s scope, design complexity, and features. Once we understand your needs, we’ll provide a clear, fixed quote—no surprises."
+  },
+  {
+    question: "Can I see some of your past work?",
+    answer: "Yes. You can check out our recent projects on the portfolio or work page. If you're looking for something industry-specific, just ask—we’ve likely built something similar."
+  }
+];
+
+
 // team member data 
 export const teamMembers: TeamMember[] = [
   {
@@ -418,9 +450,57 @@ export const headerContent: HeaderContent = {
 };
 
 
+export const blogData: Record<string, Blog> = {
+    'best-web-development-services-in-burari': {
+        title: 'Best Web Development Services in Burari - The Young Techies',
+        content:
+            "When it comes to building a strong digital presence, your website is everything. It's your first impression, your 24/7 salesperson, and the backbone of your brand online. If you're a business or startup in Burari looking for professional, reliable, and modern web development, The Young Techies is the name to trust.",
+        head1: "Who We Are",
+        description: "At The Young Techies, we’re not just another agency. We’re a team of passionate developers and designers based right here in Burari, helping local businesses go digital the right way. We combine technical skill with creative thinking to build websites that actually work—fast, responsive, and optimized for real-world results.",
+        head2: "What We Offer",
+        list: [
+            "We design visually compelling websites that align with your brand identity and business goals, ensuring a strong first impression.",
+            "From intuitive user interfaces to robust backend systems, we deliver complete development solutions tailored to your requirements.",
+            "We build secure, scalable online stores with integrated payment systems, product management, and user-friendly navigation.",
+            "Every website is optimized for seamless performance on desktops, tablets, and smartphones to ensure a consistent user experience.",
+            "We fine-tune your website for speed and efficiency, reducing load times and improving overall functionality.",
 
+        ],
+        head3: "Who We Work With",
+        description2: [
+            "Whether you’re a small business, a growing startup, or even a solo creator—if you’ve got a vision, we can build it.", "We’ve already worked with local institutes, retail stores, fitness brands, and freelancers in Burari, Sant Nagar, and nearby areas."
+        ],
+        tags: ['websites', 'web development', 'frontend', 'backend']
+    },
+}
 
-
+export const bloglistData: BlogList[] = [
+  {
+    title: 'Best Web Development Services in Burari - The Young Techies',
+    slug: 'best-web-development-services-in-burari',
+    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
+    image: "/images/blogs/web-agency.jpg"
+  },
+  {
+    title: 'Best Web Development Services in Burari - The Young Techies',
+    slug: 'best-web-development-services-in-burari',
+    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
+    image: "/images/blogs/web-agency.jpg"
+  },
+  {
+    title: 'Best Web Development Services in Burari - The Young Techies',
+    slug: 'best-web-development-services-in-burari',
+    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
+    image: "/images/blogs/web-agency.jpg"
+  },
+  {
+    title: 'Best Web Development Services in Burari - The Young Techies',
+    slug: 'best-web-development-services-in-burari',
+    summary: 'Explore the top-rated web development services available in Burari, offered by The Young Techies.',
+    image: "/images/blogs/web-agency.jpg"
+  },
+  // Add more blogs as needed
+];
 
 
 
