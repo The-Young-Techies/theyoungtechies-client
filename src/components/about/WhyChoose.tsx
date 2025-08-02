@@ -5,7 +5,7 @@ import { CheckCircleIcon } from "lucide-react"
 export default function WhyChooseUs() {
     const features = ["website Design", "SEO Optimization", "Web Development", "Mobile Apps Design"]
     return (
-        <div className="flex flex-row-reverse justify-between items-center px-10 mb-20  gap-20" >
+        <div className="flex flex-row-reverse justify-between items-center px-16 mb-20  gap-20" >
             <div className='flex flex-col justify-start items-start gap-6  text-start'>
                 <div className="text-start">
                     <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2">why choose us</p>

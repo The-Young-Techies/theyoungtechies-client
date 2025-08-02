@@ -1,5 +1,3 @@
-import PrimaryButton from '@/lib/PrimaryButton';
-import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
 
 export default function AboutValues() {
@@ -21,7 +19,7 @@ export default function AboutValues() {
     const [activeIndex, setActiveIndex] = useState(0); // default to first item (mission)
 
     return (
-        <div className="flex justify-between px-10 my-20 gap-14 ">
+        <div className="flex justify-between px-16 my-20 gap-14 ">
             <div className='flex flex-col justify-start items-start gap-5 text-start '>
                 <div className="text-start">
                     <p className="text-xs sm:text-sm tracking-widest uppercase text-blue-500 font-bold mb-2">Our Values</p>
@@ -46,9 +44,7 @@ export default function AboutValues() {
                 <div className="text-start text-gray-700 text-body mx-auto h-[100px] ">
                     <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 text-center md:text-start ">{values[activeIndex].desc}</p>
                 </div>
-                <Link to='/contact' className='mt-12'>
-                <PrimaryButton label='contact us'/>
-                </Link>
+               
             </div>
             <img src="/images/about/about-header.jpg" alt="" className='w-[500px] rounded-2xl h-[100%]' />
         </div>
