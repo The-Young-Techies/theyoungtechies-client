@@ -43,10 +43,10 @@ export default function AboutValues() {
                     ))}
                 </div>
 
-                <div className="text-start text-gray-700 text-body mx-auto h-[100px] mb-5 ">
+                <div className="text-start text-gray-700 text-body mx-auto h-[100px] ">
                     <p className="text-body-small xl:text-h6 xl:text-para md:text-body text-gray-600 text-center md:text-start ">{values[activeIndex].desc}</p>
                 </div>
-                <Link to='/contact'>
+                <Link to='/contact' className='mt-12'>
                 <PrimaryButton label='contact us'/>
                 </Link>
             </div>
