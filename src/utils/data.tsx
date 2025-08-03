@@ -1,5 +1,5 @@
-import { Mail, Phone } from "lucide-react";
-import type { ApproachStep, Blog, BlogList, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember } from "./interface";
+import { Award, ChartArea, Lightbulb, Mail, Phone, Rocket, Settings, Target, Users } from "lucide-react";
+import type { aboutBeliefs, AboutHeader, ApproachStep, Blog, BlogList, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember, Value } from "./interface";
 
 // nav items 
 export const navData: NavLink[] = [
@@ -232,13 +232,13 @@ export const services: Service[] = [
     bgColor: "#E2F6F1",
     icon: "/images/services/custom-web-dev.png",
   },
-   {
+  {
     title: "Website Maintenance",
     description: "Keep your site secure and up-to-date with regular backups, bug fixes, performance checks, and content updates—handled by our expert team.",
     bgColor: "#FFF6E5",
     icon: "/images/services/web-maintainence.png",
   },
-   {
+  {
     title: "Website Revamp",
     description: "Transform your outdated website with a complete redesign focused on modern aesthetics, faster performance, and improved user engagement.",
     bgColor: "#FDEBFF",
@@ -271,7 +271,7 @@ export const faqs: FAQItem[] = [
   },
 ];
 
-export const aboutFAQs = [
+export const aboutFAQs: FAQItem[] = [
   {
     question: "What kind of businesses do you work with?",
     answer: "We work with startups, small businesses, local brands, and growing companies across various industries. Whether you're launching your first website or need a redesign, we adapt to fit your goals and scale."
@@ -302,6 +302,59 @@ export const aboutFAQs = [
   }
 ];
 
+export const values: Value[] = [
+  {
+    btn: 'Our Mission',
+    desc: "Our mission is to build high-quality digital solutions that help businesses not just exist online, but thrive. We focus on clean code, smart design, and user-first thinking—delivering websites that are both visually strong and technically sound. No templates. Just purposeful, custom-built experiences."
+  },
+  {
+    btn: 'Our Vision',
+    desc: 'Our vision is to create a digital world where every business—big or small—can access modern web solutions that look great and perform with purpose. We aim to simplify the complex, empower growth, and build tools that make a lasting impact.'
+  },
+  {
+    btn: 'Our Goal',
+    desc: "Our goal is to be the trusted digital partner for businesses that value quality, performance, and results. We’re committed to delivering on time, with precision, and turning ideas into impactful web solutions—built with care and purpose."
+  }
+];
+
+ export const aboutBelief: aboutBeliefs[] = [
+    {
+      icon: <Award className="h-8 w-8 text-blue-600" />,
+      title: "Excellence",
+      desc: "We hold ourselves to the highest standards in every project.",
+    },
+    {
+      icon: <Users className="h-8 w-8 text-blue-600" />,
+      title: "Collaboration",
+      desc: "We partner closely with our clients for shared success.",
+    },
+    {
+      icon: <Lightbulb className="h-8 w-8 text-blue-600" />,
+      title: "Innovation",
+      desc: "We embrace new technologies and creative thinking.",
+    },
+    {
+      icon: <Target className="h-8 w-8 text-blue-600" />,
+      title: "Focus",
+      desc: "Your business goals drive every strategy and solution.",
+    },
+  ]
+
+  export const aboutHeaderHighlights: AboutHeader[] = [{
+        content: "6+ Custom Projects Delivered",
+        icon: <Rocket color="#C2410C" size={18} />
+    },
+    {
+        content: "20+ Technologies Mastered",
+        icon: <Settings color="#4D7C0F" size={18}/>
+    },
+    {
+        content: "1-2 Week Avg. Delivery Time",
+        icon: <ChartArea color="#BE185D" size={18}/>
+    }
+    ]
+
+    export  const features = ["website Design", "SEO Optimization", "Web Development", "Mobile Apps Design"]
 
 // team member data 
 export const teamMembers: TeamMember[] = [
@@ -412,12 +465,12 @@ export const footerSections: FooterLinkSection[] = [
 
 export const contactInfo: FooterContactInfo[] = [
   {
-    icon: <Mail className="px-2" size={150}/>,
+    icon: <Mail className="px-2" size={150} />,
     value: "contact@theyoungtechies.com",
     href: "mailto:contact@theyoungtechies.com",
   },
   {
-    icon: <Phone  className="px-2" size={150}/>,
+    icon: <Phone className="px-2" size={150} />,
     value: "+91 93102 56281",
     href: "tel:+919310256281",
   },
@@ -451,27 +504,27 @@ export const headerContent: HeaderContent = {
 
 
 export const blogData: Record<string, Blog> = {
-    'best-web-development-services-in-burari': {
-        title: 'Best Web Development Services in Burari - The Young Techies',
-        content:
-            "When it comes to building a strong digital presence, your website is everything. It's your first impression, your 24/7 salesperson, and the backbone of your brand online. If you're a business or startup in Burari looking for professional, reliable, and modern web development, The Young Techies is the name to trust.",
-        head1: "Who We Are",
-        description: "At The Young Techies, we’re not just another agency. We’re a team of passionate developers and designers based right here in Burari, helping local businesses go digital the right way. We combine technical skill with creative thinking to build websites that actually work—fast, responsive, and optimized for real-world results.",
-        head2: "What We Offer",
-        list: [
-            "We design visually compelling websites that align with your brand identity and business goals, ensuring a strong first impression.",
-            "From intuitive user interfaces to robust backend systems, we deliver complete development solutions tailored to your requirements.",
-            "We build secure, scalable online stores with integrated payment systems, product management, and user-friendly navigation.",
-            "Every website is optimized for seamless performance on desktops, tablets, and smartphones to ensure a consistent user experience.",
-            "We fine-tune your website for speed and efficiency, reducing load times and improving overall functionality.",
+  'best-web-development-services-in-burari': {
+    title: 'Best Web Development Services in Burari - The Young Techies',
+    content:
+      "When it comes to building a strong digital presence, your website is everything. It's your first impression, your 24/7 salesperson, and the backbone of your brand online. If you're a business or startup in Burari looking for professional, reliable, and modern web development, The Young Techies is the name to trust.",
+    head1: "Who We Are",
+    description: "At The Young Techies, we’re not just another agency. We’re a team of passionate developers and designers based right here in Burari, helping local businesses go digital the right way. We combine technical skill with creative thinking to build websites that actually work—fast, responsive, and optimized for real-world results.",
+    head2: "What We Offer",
+    list: [
+      "We design visually compelling websites that align with your brand identity and business goals, ensuring a strong first impression.",
+      "From intuitive user interfaces to robust backend systems, we deliver complete development solutions tailored to your requirements.",
+      "We build secure, scalable online stores with integrated payment systems, product management, and user-friendly navigation.",
+      "Every website is optimized for seamless performance on desktops, tablets, and smartphones to ensure a consistent user experience.",
+      "We fine-tune your website for speed and efficiency, reducing load times and improving overall functionality.",
 
-        ],
-        head3: "Who We Work With",
-        description2: [
-            "Whether you’re a small business, a growing startup, or even a solo creator—if you’ve got a vision, we can build it.", "We’ve already worked with local institutes, retail stores, fitness brands, and freelancers in Burari, Sant Nagar, and nearby areas."
-        ],
-        tags: ['websites', 'web development', 'frontend', 'backend']
-    },
+    ],
+    head3: "Who We Work With",
+    description2: [
+      "Whether you’re a small business, a growing startup, or even a solo creator—if you’ve got a vision, we can build it.", "We’ve already worked with local institutes, retail stores, fitness brands, and freelancers in Burari, Sant Nagar, and nearby areas."
+    ],
+    tags: ['websites', 'web development', 'frontend', 'backend']
+  },
 }
 
 export const bloglistData: BlogList[] = [

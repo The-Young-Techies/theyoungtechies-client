@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export interface NavLink {
   anker: string;
   href: string;
@@ -117,15 +119,15 @@ export interface HeaderContent {
 }
 
 export interface Blog {
-    title: string
-    content: string
-    head1: string
-    description: string
-    description2: string[]
-    head2: string
-    head3: string
-    list: string[]
-    tags: string[]
+  title: string
+  content: string
+  head1: string
+  description: string
+  description2: string[]
+  head2: string
+  head3: string
+  list: string[]
+  tags: string[]
 }
 
 export interface BlogList {
@@ -135,3 +137,18 @@ export interface BlogList {
   image: string
 };
 
+export interface Value {
+  btn: string;
+  desc: string;
+}
+
+export interface aboutBeliefs {
+  icon: JSX.Element;
+  title: string;
+  desc: string;
+}
+
+export interface AboutHeader{
+  content: string;
+  icon: JSX.Element;
+}

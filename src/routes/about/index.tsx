@@ -12,17 +12,13 @@ export const Route = createFileRoute('/about/')({
 // Main About Page
 function AboutPage() {
   return (
-    <section
-      id="about"
-      className="bg-white text-black flex flex-col items-center"
-    >
-      <div className="container mx-auto flex flex-col items-center">
+
+      <div className="flex flex-col items-center">
         <AboutHeader />
         <AboutValues/>
         <Belief />
         <WhyChooseUs/>
         <AboutFaqs/>
       </div>
-    </section>
   )
 }
