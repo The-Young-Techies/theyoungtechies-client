@@ -45,12 +45,12 @@ export default function Footer() {
             </h3>
             <nav className="flex flex-col space-y-3 text-white text-base" aria-label={section.title}>
               {section.links.map((link) => (
-                <ScrollLink key={link.label}
-                  to={link.href} smooth={true} duration={500}>
+                <Link key={link.label}
+                  to={link.href}>
                   <span className="hover:text-blue-200 cursor-pointer transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
                     {link.label}
                   </span>
-                </ScrollLink>
+                </Link>
               ))}
             </nav>
           </section>

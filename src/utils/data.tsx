@@ -444,23 +444,23 @@ export const footerSections: FooterLinkSection[] = [
   {
     title: "Quick Links",
     links: [
-      { label: "Services", href: "services" },
-      { label: "About Us", href: "about" },
-      { label: "Projects", href: "projects" },
-      { label: "Contact", href: "contact" },
+      { label: "Services", href: "services"},
+      { label: "About Us", href: "about"},
+      { label: "Projects", href: "projects"},
+      { label: "Contact", href: "contact"},
     ],
   },
   {
     title: "Services",
     links: [
-      { label: "Website Development", href: "services" },
+      { label: "Website Development", href:"services" },
       { label: "Website Design", href: "services" },
-      { label: "Admin Dashboard", href: "services" },
-      { label: "SEO Optimization", href: "services" },
-      { label: "E-Commerce Solution", href: "services" },
+      { label: "Admin Dashboard", href: "services"},
+      { label: "SEO Optimization", href: "services"},
+      { label: "E-Commerce Solutions", href: "services"},
       { label: "Custom Website Development", href: "services" },
-      { label: "Website Maintenance", href: "services" },
-      { label: "Website Revamp", href: "services" },
+      { label: "Website Maintenance", href: "services"},
+      { label: "Website Revamp", href: "services"},
     ]
     ,
   },
