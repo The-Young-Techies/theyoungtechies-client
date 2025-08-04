@@ -6,7 +6,7 @@ export interface NavLink {
 }
 
 export interface SocialLink {
-  icon: string;
+  icon: React.ComponentType<{ className?: string }>;
   path: string;
   label: string;
 }

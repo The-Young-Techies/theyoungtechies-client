@@ -1,6 +1,8 @@
-import { Award, ChartArea, Lightbulb, Mail, Phone, Rocket, Settings, Target, Users } from "lucide-react";
+import { Award, ChartArea, Lightbulb, Mail, Phone, Rocket, Settings, Target, Twitter, Users } from "lucide-react";
 import type { aboutBeliefs, AboutHeader, ApproachStep, Blog, BlogList, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember, Value } from "./interface";
-
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 // nav items 
 export const navData: NavLink[] = [
   { anker: "About", href: "/about" },
@@ -12,31 +14,32 @@ export const navData: NavLink[] = [
 // social links
 export const socialLinks: SocialLink[] = [
   {
-    icon: '/images/social-icons/linked-in-icon.png',
+    icon: FaLinkedin,
     path: "https://www.linkedin.com/company/106689660/admin/dashboard/",
     label: "LinkedIn",
   },
   {
-    icon: '/images/social-icons/X-icon.png',
+    icon:(props) => <FontAwesomeIcon icon={faXTwitter} {...props} />,
     path: "https://x.com/theyoungtechies",
     label: "Twitter / X",
   },
   {
-    icon: '/images/social-icons/whatsapp-icon.png',
+    icon: FaWhatsapp,
     path: "https://wa.me/9310256281",
     label: "WhatsApp",
   },
   {
-    icon: '/images/social-icons/instagram-icon.png',
+    icon: FaInstagram,
     path: "https://www.instagram.com/theyoungtechiesofficial/",
     label: "Instagram",
   },
   {
-    icon: '/images/social-icons/facebook-icon.png',
+    icon: FaFacebook,
     path: "https://www.facebook.com/profile.php?id=61575130954126",
     label: "Facebook",
   },
 ];
+
 
 // about 
 export const aboutContent = {

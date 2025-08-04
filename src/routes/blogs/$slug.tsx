@@ -76,7 +76,7 @@ function BlogDetailPage() {
                             {
                                 socialLinks.map((value, index) => (
                                     <Link key={index} to={value.path}>
-                                        <img src={value.icon} alt="" className='w-8 rounded' />
+                                          <value.icon className="text-xl md:text-2xl text-blue-600" />
                                     </Link>
                                 ))
                             }

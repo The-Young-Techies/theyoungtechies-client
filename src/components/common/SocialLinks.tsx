@@ -7,28 +7,19 @@ interface Props {
   iconsWidth: number;
 }
 
-function SocialLinks({ classname = '', iconsHeight, iconsWidth }: Props) {
+function SocialLinks({ classname = '', }: Props) {
   return (
     <div className={`flex items-center gap-4 ${classname}`}>
-      {socialLinks.map(({ icon, path, label }) => (
+      {socialLinks.map(({ icon: Icon, path, label }) => (
         <Link
           key={label}
           to={path}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Visit our ${label} page`}
-          className="rounded-full overflow-hidden hover:opacity-80 transition transform hover:scale-110"
+          className=" overflow-hidden hover:opacity-80 transition transform hover:scale-110 "
         >
-          <img   
-            src={icon}
-            alt={label}
-            style={{ height: `${iconsHeight}px`, width: `${iconsWidth}px` }}
-            className="object-contain"
-            onError={(e) => {
-              e.currentTarget.src =
-                'https://placehold.co/24x24/ff0000/ffffff?text=E';
-            }}
-          />
+          <Icon className="text-xl md:text-2xl" />
         </Link>
       ))}
     </div>
