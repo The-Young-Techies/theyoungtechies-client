@@ -5,17 +5,17 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-blue-900 py-5 flex justify-center items-center flex-col px-6 sm:px-10 lg:px-16 select-none">
+    <footer className="w-full bg-gray-900 py-5 flex justify-center items-center flex-col px-6 sm:px-10 lg:px-16 select-none">
       <div className="w-full grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
         {/* Logo & Description */}
         <div className="flex flex-col">
           <Link to="/" aria-label="Homepage" className="inline-flex items-center mb-6 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
             <img
-              src="/images/logos/youngtech-logos.png"
+              src="/images/logos/logo-3.png"
               alt="The Young Techies Logo"
-              width={50}
-              height={40}
+              width={200}
+              height={100}
               className="object-contain"
               loading="lazy"
             />

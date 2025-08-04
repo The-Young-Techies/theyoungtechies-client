@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
         <header className="w-full sticky top-0 z-40">
             <nav className="w-full bg-white z-30 shadow-md flex justify-between items-center px-6 sm:px-10 md:px-14 lg:px-16 h-[64px]">
                 <a href="/" className="flex items-center">
-                    <img src="/images/logos/youngtech-logos.png" alt="The Young Techies Logo" className="h-12 object-contain" />
+                    <img src="/images/logos/logo-2.png" alt="The Young Techies Logo" className="h-12 object-contain" />
                 </a>
 
                 <div className="hidden sm:flex items-center space-x-10">
