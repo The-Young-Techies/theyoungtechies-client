@@ -1,6 +1,6 @@
-import { Award, ChartArea, Lightbulb, Mail, Phone, Rocket, Settings, Target, Twitter, Users } from "lucide-react";
+import { Award, ChartArea, Lightbulb, Mail, Phone, Rocket, Settings, Target, Users } from "lucide-react";
 import type { aboutBeliefs, AboutHeader, ApproachStep, Blog, BlogList, ContactMethod, CTAData, FAQItem, FooterContactInfo, FooterLinkSection, FormField, HeaderContent, IEventStats, NavLink, Project, Service, SocialLink, TeamMember, Value } from "./interface";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 // nav items 

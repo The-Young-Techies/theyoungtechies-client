@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
-import { aboutFAQs, faqs } from "@/utils/data";
+import { aboutFAQs } from "@/utils/data";
 import { type FAQItem } from "@/utils/interface";
 
 export default function AboutFaqs() {

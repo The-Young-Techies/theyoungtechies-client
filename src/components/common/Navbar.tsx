@@ -38,9 +38,16 @@ const MobileMenu: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen
                     <a href="tel:+919310256281" className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Phone size={20} /> +91 93102 56281</a>
                 </div>
                 <div className="mt-8 flex items-center gap-6">
-                    {socialLinks.map(({ icon, path, label }) => (
-                        <a key={label} href={path} target="_blank" rel="noopener noreferrer" aria-label={label} className="rounded-full overflow-hidden hover:opacity-80 transition transform hover:scale-110">
-                            <img src={icon} alt={label} className="w-8 h-8 object-contain" onError={(e) => { e.currentTarget.src = 'https://placehold.co/32x32/ff0000/ffffff?text=E'; }} />
+                    {socialLinks.map(({ icon: Icon, path, label }) => (
+                        <a
+                            key={label}
+                            href={path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={label}
+                            className="hover:opacity-80 transition transform hover:scale-110"
+                        >
+                            <Icon className="w-8 h-8 text-white" />
                         </a>
                     ))}
                 </div>

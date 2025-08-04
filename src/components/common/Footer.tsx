@@ -1,7 +1,6 @@
 import { contactInfo, footerSections } from "@/utils/data";
 import { Link } from "@tanstack/react-router";
 import SocialLinks from "./SocialLinks";
-import { Link as ScrollLink } from "react-scroll";
 
 export default function Footer() {
   return (
